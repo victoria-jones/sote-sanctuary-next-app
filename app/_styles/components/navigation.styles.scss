@@ -1,0 +1,52 @@
+@import '../main.styles';
+
+header {
+    //background-color: pink;
+    //display: flex;
+    //justify-content: space-between;
+
+    .main-nav {
+        background-color: orange;
+        display: flex;
+        align-items: center;
+
+        &__list {
+            display: flex;
+            width: 100%;
+
+            border-bottom: .2rem solid;
+            border-image: linear-gradient(to right, $color-black 50%, transparent 50%) 100% 1;
+        }
+        &__link {
+            &:not(:first-child){
+                padding-left: 5rem;
+            }
+        }
+    }
+
+    .nav-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-nav{
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &__list {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            border-bottom: .2rem solid;
+            border-image: linear-gradient(to left, $color-black 50%, transparent 50%) 100% 1;
+        }
+        &__link {
+            &:not(:first-child){
+                padding-left: 2.5rem;
+            }
+        }
+    }
+}
