@@ -6,7 +6,7 @@ header {
     //justify-content: space-between;
 
     .main-nav {
-        background-color: orange;
+        //background-color: orange;
         display: flex;
         align-items: center;
 
@@ -18,8 +18,21 @@ header {
             border-image: linear-gradient(to right, $color-black 50%, transparent 50%) 100% 1;
         }
         &__link {
+            transition: all .3s;
+            color: $color-black;
+
             &:not(:first-child){
-                padding-left: 5rem;
+                margin-left: 5rem;
+            }
+
+            &:visited,
+            &:active {
+               color: $color-black;
+            }
+
+            &:hover {
+                transform: rotate(-20deg);
+                color: $color-brand-yellow;
             }
         }
     }
@@ -31,10 +44,11 @@ header {
     }
 
     .social-nav{
-        background-color: green;
+        //background-color: green;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+
         &__list {
             display: flex;
             justify-content: flex-end;
@@ -44,9 +58,55 @@ header {
             border-image: linear-gradient(to left, $color-black 50%, transparent 50%) 100% 1;
         }
         &__link {
+            transition: all .3s;
             &:not(:first-child){
-                padding-left: 2.5rem;
+                margin-left: 2.5rem;
             }
+
+            &:hover {
+                transform: rotate(-20deg);
+            }
+        }
+    }
+
+    /////////////////////
+    /// MOBILE DESIGN ///
+    ////////////////////
+
+    .mobile {
+
+        &__nav-logo {
+            justify-self: start;
+        }
+
+        &__menu {
+            justify-self: end;
+            height: 2rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                width: 3.5rem;
+                height: .5rem;
+                background-color: $color-black;
+            }
+            &::after {
+                width: 2rem;
+            }
+        }
+
+        &__dropmenu {
+            position: absolute;
         }
     }
 }
