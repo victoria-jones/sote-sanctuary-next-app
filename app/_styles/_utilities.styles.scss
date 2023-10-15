@@ -1,4 +1,19 @@
+@import 'main.styles.scss';
+
 .flexLineBreak {
     flex-basis: 100%;
     height: 0;
 }
+
+.basicLink,
+.basicLink:visited,
+.basicLink:active {
+    transition: all .3s;
+    color: $color-black;
+
+    &:hover {
+        transform: rotate(-20deg);
+        color: $color-brand-yellow;
+    }
+}
+

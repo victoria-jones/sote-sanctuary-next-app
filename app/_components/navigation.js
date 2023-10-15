@@ -10,11 +10,20 @@ import instagram from '../../public/images/icons/instagram.svg';
 export default function Nav () {
     const { width } = ViewportSize();
     const [ mobileView, setMobileView ] = useState(false);
+    const [ openMobileMenu, setOpenMobileMenu ] = useState();
 
     useEffect(() => {
         const mobileBreakpoint = 900;
         width <= mobileBreakpoint ? setMobileView(true) : setMobileView(false);
     }, [width]);
+
+    useEffect(() => {
+        setOpenMobileMenu(false);
+    },[]);
+
+    const toggleMobileMenu = () => {
+        setOpenMobileMenu(!openMobileMenu);
+    }
 
 
     if ( mobileView ) {
@@ -22,43 +31,64 @@ export default function Nav () {
            <header className="mobile">
                 <Link className="mobile__nav-logo"
                     href="/">
-                        <Logo />
+                        <Logo toggleColor={openMobileMenu ? true : false}/>
                 </Link>
-                <div className="mobile__menu">
 
+                <div className={`mobile__menu
+                    ${openMobileMenu ? 'mobile__menu--active' : ''}
+                `}
+                    onClick={toggleMobileMenu}>
+                        <div className={`mobile__menu__bar mobile__menu__bar--1
+                            ${openMobileMenu ? 'mobile__menu--active__bar mobile__menu--active__bar--1' : ''}
+                        `}></div>
+                        <div className={`mobile__menu__bar mobile__menu__bar--2
+                            ${openMobileMenu ? 'mobile__menu--active__bar mobile__menu--active__bar--2' : ''}
+                        `}></div>
+                        <div className={`mobile__menu__bar mobile__menu__bar--3
+                            ${openMobileMenu ? 'mobile__menu--active__bar mobile__menu--active__bar--3' : ''}
+                        `}></div>
                 </div>
-                <div className="mobile__dropmenu">
-                    <nav className="mobile-main-nav">
-                        <ul className="mobile-main-nav__list">
-                            <Link className="mobile-main-nav__link"
+
+                <div className={`mobile__dropmenu
+                    ${openMobileMenu ? 'mobile__dropmenu--active' : ''}
+                `}>
+                    <nav className="mobile__main-nav">
+                        <ul className="mobile__main-nav__list">
+                            <Link onClick={toggleMobileMenu}
+                                className="mobile__main-nav__link"
                                 href="#about-section">
-                                <li className="mobile-main-nav__link--item">about</li>
+                                <li className="mobile__main-nav__link--item">about</li>
                             </Link>
-                            <Link className="mobile-main-nav__link"
+                            <Link onClick={toggleMobileMenu}
+                                className="mobile__main-nav__link"
                                 href="#family-section">
-                                <li className="mobile-main-nav__link--item">family</li>
+                                <li className="mobile__main-nav__link--item">family</li>
                             </Link>
-                            <Link className="mobile-main-nav__link"
+                            <Link onClick={toggleMobileMenu}
+                                className="mobile__main-nav__link"
                                 href="#goals-section">
-                                <li className="mobile-main-nav__link--item">goals</li>
+                                <li className="mobile__main-nav__link--item">goals</li>
                             </Link>
-                            <Link className="mobile-main-nav__link"
+                            <Link onClick={toggleMobileMenu}
+                                className="mobile__main-nav__link"
                                 href="#family-section">
-                                <li className="mobile-main-nav__link--item">donate</li>
+                                <li className="mobile__main-nav__link--item">donate</li>
                             </Link>
                         </ul>
                     </nav>
-                    <nav className="mobile-social-nav">
-                        <ul className="mobile-social-nav__list">
-                            <Link className="mobile-social-nav__link"
+                    <nav className="mobile__social-nav">
+                        <ul className="mobile__social-nav__list">
+                            <Link onClick={toggleMobileMenu}
+                                className="mobile__social-nav__link"
+                                target="blank"
                                 href="#">
-                                    <li className="mobile-social-nav__link--item">
+                                    <li className="mobile__social-nav__link--item">
                                         <Image
-                                            className="mobile-social-nav__link--item--image"
+                                            className="mobile__social-nav__link--image"
                                             priority
                                             src={instagram}
-                                            width={30}
-                                            height={30}
+                                            width={50}
+                                            height={50}
                                             alt="instagram icon"
                                         />
                                     </li>
