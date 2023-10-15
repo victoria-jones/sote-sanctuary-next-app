@@ -37,3 +37,14 @@ $mobile-font-enlarge: 2.8rem;
         color: $color-brand-yellow;
     }
 }
+
+    ////////////////////////
+    /// ANIMATION MIXINS ///
+    ////////////////////////
+
+@mixin bounce-animation ($delay) {
+    animation-name: bounce;
+    animation-duration: .8s;
+    animation-delay: $delay;
+    animation-iteration-count: infinite;
+}

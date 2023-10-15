@@ -97,6 +97,15 @@ header {
             &:hover {
                 cursor: pointer;
             }
+            &:hover .mobile__menu__bar {
+                transform: translateY(-.5rem);
+            }
+            &:hover .mobile__menu__bar--2 {
+                transition-delay: .05s;
+            }
+            &:hover .mobile__menu__bar--3 {
+                transition-delay: .1s;
+            }
 
             &__bar {
                 width: 3.5rem;
@@ -110,6 +119,15 @@ header {
                 &--3 {
                     width: .5rem;
                 }
+            }
+
+            //have to add this dumb stuff if I don't what the unopened menu icon to
+            //erase the transformed X while hover :/ *sigh*
+            &--active:hover .mobile__menu__bar--1 {
+                transform: rotate(-135deg);
+            }
+            &--active:hover .mobile__menu__bar--2 {
+                transform: rotate(135deg);
             }
 
             &--active {

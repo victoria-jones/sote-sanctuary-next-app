@@ -119,3 +119,21 @@ a {
 /********************
     ANIMATIONS
 ********************/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-.5rem);
+  }
+  60% {
+    transform: translateY(.3rem);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
