@@ -31,7 +31,7 @@ export default function Nav () {
            <header className="mobile">
                 <Link className="mobile__nav-logo"
                     href="/">
-                        <Logo toggleColor={openMobileMenu ? true : false}/>
+                        <Logo mobile toggleColor={openMobileMenu ? true : false}/>
                 </Link>
 
                 <div className={`mobile__menu
