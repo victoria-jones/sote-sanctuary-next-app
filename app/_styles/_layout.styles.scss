@@ -48,6 +48,25 @@ header {
   }
 }
 
+//////////////////
+/// ABOUT GRID ///
+//////////////////
+
+.about {
+  display: grid;
+  grid-template-rows: 50rem;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+
+  align-items: center;
+
+  @include respond(tab-port) {
+    grid-template-rows: 30rem 20rem;
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+}
+
 /********************
         LAYOUT
 ********************/
