@@ -43,7 +43,7 @@ header {
   grid-template-columns: 3fr 1fr 3fr;
 
   @include respond(tab-port) {
-    grid-template-rows: 6rem;
+    grid-template-rows: 4rem;
     grid-template-columns: 1fr 1fr;
   }
 }
