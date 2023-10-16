@@ -31,7 +31,7 @@ header {
             }
 
             &:hover {
-                transform: rotate(-20deg);
+                @include hoverRotate;
                 color: $color-brand-yellow;
             }
         }
@@ -64,7 +64,7 @@ header {
             }
 
             &:hover {
-                transform: rotate(-20deg);
+                @include hoverRotate;
             }
         }
     }
@@ -197,10 +197,21 @@ header {
         }
 
         &__social-nav {
+
+            &__list {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
             &__link,
             &__link:visited,
             &__link:active {
                 @include hoverRotate;
+            }
+            &__link {
+                &:hover {
+                    @include hoverRotate;
+                }
             }
         }
     }
