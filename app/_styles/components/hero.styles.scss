@@ -1,0 +1,45 @@
+@import '../main.styles.scss';
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+
+    &__logo-image-wrapper,
+    &__image-wrapper {
+        position: absolute;
+    }
+
+    &__image-wrapper {
+        z-index: -2;
+    }
+
+    &__logo-image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        max-width: 50rem;
+    }
+
+    &__logo-image,
+    &__logo-image-circle {
+        position: absolute;
+    }
+
+    &__logo-image {
+        object-fit: contain;
+    }
+
+    &__logo-image-circle {
+        z-index: -1;
+        width: 65rem;
+        height: 40rem;
+        background-color: $color-white;
+        border-radius: 50%;
+        @include drop-shadow;
+    }
+}

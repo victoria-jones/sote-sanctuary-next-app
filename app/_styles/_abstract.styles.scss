@@ -38,6 +38,10 @@ $mobile-font-enlarge: 2.8rem;
     }
 }
 
+@mixin drop-shadow {
+    filter: drop-shadow(0 .8rem .7rem rgba($color-black, .3));
+}
+
     ////////////////////////
     /// ANIMATION MIXINS ///
     ////////////////////////
