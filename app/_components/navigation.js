@@ -6,6 +6,9 @@ import Logo from './logo';
 import ViewportSize from './viewport-size';
 import '..//_styles/components/navigation.styles.scss';
 import instagram from '../../public/images/icons/instagram.svg';
+import facebook from '../../public/images/icons/facebook.svg';
+import tiktok from '../../public/images/icons/tiktok.svg';
+import youtube from '../../public/images/icons/youtube.svg';
 
 export default function Nav () {
     const { width } = ViewportSize();
@@ -93,6 +96,51 @@ export default function Nav () {
                                         />
                                     </li>
                             </Link>
+                            <Link onClick={toggleMobileMenu}
+                                className="mobile__social-nav__link"
+                                target="blank"
+                                href="#">
+                                    <li className="mobile__social-nav__link--item">
+                                        <Image
+                                            className="mobile__social-nav__link--image"
+                                            priority
+                                            src={facebook}
+                                            width={50}
+                                            height={50}
+                                            alt="instagram icon"
+                                        />
+                                    </li>
+                            </Link>
+                            <Link onClick={toggleMobileMenu}
+                                className="mobile__social-nav__link"
+                                target="blank"
+                                href="#">
+                                    <li className="mobile__social-nav__link--item">
+                                        <Image
+                                            className="mobile__social-nav__link--image"
+                                            priority
+                                            src={tiktok}
+                                            width={50}
+                                            height={50}
+                                            alt="instagram icon"
+                                        />
+                                    </li>
+                            </Link>
+                            <Link onClick={toggleMobileMenu}
+                                className="mobile__social-nav__link"
+                                target="blank"
+                                href="#">
+                                    <li className="mobile__social-nav__link--item">
+                                        <Image
+                                            className="mobile__social-nav__link--image"
+                                            priority
+                                            src={youtube}
+                                            width={50}
+                                            height={50}
+                                            alt="instagram icon"
+                                        />
+                                    </li>
+                            </Link>
                         </ul>
                     </nav>
                 </div>
@@ -136,6 +184,45 @@ export default function Nav () {
                                         className="social-nav__link--item--image"
                                         priority
                                         src={instagram}
+                                        width={30}
+                                        height={30}
+                                        alt="instagram icon"
+                                    />
+                                </li>
+                        </Link>
+                        <Link className="social-nav__link"
+                            href="#">
+                                <li className="social-nav__link--item">
+                                    <Image
+                                        className="social-nav__link--item--image"
+                                        priority
+                                        src={facebook}
+                                        width={30}
+                                        height={30}
+                                        alt="instagram icon"
+                                    />
+                                </li>
+                        </Link>
+                        <Link className="social-nav__link"
+                            href="#">
+                                <li className="social-nav__link--item">
+                                    <Image
+                                        className="social-nav__link--item--image"
+                                        priority
+                                        src={tiktok}
+                                        width={30}
+                                        height={30}
+                                        alt="instagram icon"
+                                    />
+                                </li>
+                        </Link>
+                        <Link className="social-nav__link"
+                            href="#">
+                                <li className="social-nav__link--item">
+                                    <Image
+                                        className="social-nav__link--item--image"
+                                        priority
+                                        src={youtube}
                                         width={30}
                                         height={30}
                                         alt="instagram icon"

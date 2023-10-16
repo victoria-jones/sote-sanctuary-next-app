@@ -197,11 +197,12 @@ header {
         }
 
         &__social-nav {
+            width: 90vw;
 
             &__list {
                 width: 100%;
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
             }
             &__link,
             &__link:visited,
