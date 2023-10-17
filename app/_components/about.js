@@ -8,7 +8,7 @@ export default function About () {
                 <div className="about__video-line about__video-line-top"></div>
 
                 <div className="about__logo">
-                    <Logo />
+                    <Logo large />
                 </div>
                 <div className="about__video">video</div>
 
