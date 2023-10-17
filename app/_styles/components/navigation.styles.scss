@@ -15,7 +15,7 @@ header {
             width: 100%;
 
             border-bottom: .2rem solid;
-            border-image: linear-gradient(to right, $color-black 50%, transparent 50%) 100% 1;
+            border-image: linear-gradient(to right, $color-secondary-grey 50%, transparent 50%) 100% 1;
         }
         &__link {
             transition: all .3s;
@@ -55,7 +55,7 @@ header {
             width: 100%;
 
             border-bottom: .2rem solid;
-            border-image: linear-gradient(to left, $color-black 50%, transparent 50%) 100% 1;
+            border-image: linear-gradient(to left, $color-secondary-grey 50%, transparent 50%) 100% 1;
         }
         &__link {
             transition: all .3s;
