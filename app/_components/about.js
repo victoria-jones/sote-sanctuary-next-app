@@ -3,14 +3,18 @@ import '..//_styles/components/about.styles.scss';
 
 export default function About () {
     return(
-        <section className="about" id="about-section">
+        <section className="about main-section" id="about-section">
             <div className="about__video-wrapper">
                 <div className="about__video-line about__video-line-top"></div>
 
                 <div className="about__logo">
                     <Logo large />
                 </div>
-                <div className="about__video">video</div>
+                <div className="about__video">
+                    <video width="100%" height="100%" muted autoPlay loop>
+                        <source src="/videos/pig-and-pond_sote-sanctuary_video.mp4" type="video/mp4" />
+                    </video>
+                </div>
 
                 <div className="about__video-line about__video-line-bottom"></div>
             </div>

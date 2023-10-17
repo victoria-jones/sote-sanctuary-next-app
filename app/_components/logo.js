@@ -19,8 +19,8 @@ export default function Logo ({ toggleColor, mobile, large }) {
                 <div className="logo__leaf logo__large__leaf">
                     <Image
                         src="/images/orange-leaves_large.png"
-                        height={55}
-                        width={208}
+                        height={80}
+                        width={300}
                         alt=""
                     />
                 </div>

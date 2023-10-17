@@ -1,6 +1,6 @@
 export default function Follow () {
     return(
-        <section className="follow" id="follow-section">
+        <section className="follow main-section" id="follow-section">
             social media/follow
         </section>
     );
