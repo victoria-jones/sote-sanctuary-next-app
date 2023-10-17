@@ -13,6 +13,10 @@ body {
   header {
     grid-column: center-start/center-end;
     grid-row: 1;
+
+    @include respond(tab-port) {
+      padding: 1rem;
+    }
   }
   main {
     grid-column: center-start/center-end;
@@ -28,7 +32,7 @@ body {
   footer {
     @include respond(tab-port) {
       grid-column: full-start / full-end;
-      padding: 1rem;
+      //padding: 1rem;
     }
 }
 
@@ -61,7 +65,7 @@ header {
   align-items: center;
 
   @include respond(tab-port) {
-    grid-template-rows: 30rem 20rem;
+    grid-template-rows: 30rem auto;
     grid-template-columns: 1fr;
     row-gap: 5rem;
   }
@@ -74,3 +78,7 @@ header {
 .main {
   position: relative;
 }
+
+//.main-section {
+  //margin: 1rem 0;
+//}

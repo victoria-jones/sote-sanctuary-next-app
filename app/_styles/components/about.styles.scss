@@ -47,4 +47,10 @@
     &__video-line {
         position: absolute;
     }
+
+    &__text {
+        @include respond(tab-port) {
+            margin: 0 10vw;
+        }
+    }
 }
