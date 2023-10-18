@@ -1,0 +1,30 @@
+@import '../main.styles.scss';
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &__link,
+    &__:active,
+    &__:visited {
+        color: $color-white;
+    }
+
+    &__style {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $color-black;
+        //padding: 1rem 3rem;
+        width: 14.5rem;
+        height: 4.1rem;
+    }
+
+    &__leaves {
+        position: absolute;
+        z-index: -1;
+    }
+}
