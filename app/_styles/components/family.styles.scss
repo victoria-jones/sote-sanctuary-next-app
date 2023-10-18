@@ -1,0 +1,34 @@
+@import '../main.styles.scss';
+
+.family {
+
+    &__title {
+        position: relative;
+
+        &__container {
+            margin: 2rem 0;
+        }
+        &__upper-text {
+            @include upperHeading;
+            font-size: 5rem;
+            line-height: .9;
+        }
+        &__lower-text {
+            @include lowerHeading;
+            font-size: 3.2rem;
+            line-height: .9;
+            margin-top: -.5rem;
+        }
+        &__heart {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            //margin-right: 3.2rem;
+        }
+    }
+
+    &__donate {
+        padding: 2rem 12rem;
+    }
+}

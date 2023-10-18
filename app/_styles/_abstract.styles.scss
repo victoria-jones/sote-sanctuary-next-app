@@ -20,6 +20,7 @@ $heading-font: 'Bebas Neue', sans-serif;
 $heading-secondary-font: 'IM Fell Great Primer', serif;
 
 $default-font-size: 1.6rem;
+
 $mobile-font-enlarge: 2.8rem;
 
 /********************
@@ -36,6 +37,16 @@ $mobile-font-enlarge: 2.8rem;
         transform: rotate(-20deg);
         color: $color-brand-yellow;
     }
+}
+
+@mixin upperHeading () {
+    font-family: $heading-font;
+    color: $color-brand-yellow;
+}
+
+@mixin lowerHeading () {
+    font-family: $heading-secondary-font;
+    color: $color-brand-yellow;
 }
 
 @mixin drop-shadow {
