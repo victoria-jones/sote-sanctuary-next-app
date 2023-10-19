@@ -66,7 +66,7 @@ export default function Carousel () {
                     carousel__animal-container--02
                 ">
                     <div className="carousel__animal-name">
-                        goat fill
+                        The General
                     </div>
                     <Image
                         src="/images/animal-portraits/goat-portrait.png"
@@ -112,7 +112,7 @@ export default function Carousel () {
                     carousel__animal-container--04
                 ">
                     <div className="carousel__animal-name">
-                        pig fill
+                        Pigsly
                     </div>
                     <Image className="carousel__animal-image"
                         id="family-animal-image--01"

@@ -90,9 +90,6 @@ $mobile-font-enlarge: 2.8rem;
     animation-name: float;
     animation-duration: 1s;
     animation-timing-function: ease;
-    //animation-delay: random(10) / 10 + s;
-    transition-delay: random() + s;
-    animation-delay: random() + s;
     animation-iteration-count: infinite;
 }
 
