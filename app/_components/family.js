@@ -1,12 +1,16 @@
 import Image from 'next/image';
 import '..//_styles/components/family.styles.scss';
 import StyledButton from './styled-button';
+import Carousel from './carousel';
 
 export default function Family () {
     return(
         <section className="family main-section" id="family-section">
+
             <div className="family__carousel">
-                carousel area
+                <h2 className="family__header">Meet our Family</h2>
+
+                <Carousel />
             </div>
 
             <div className="family__title">
@@ -24,11 +28,12 @@ export default function Family () {
                         height={153}
                     />
                 </div>
+                <div className="family__title__bottom-border"></div>
             </div>
 
             <div className="family__donate">
-                <div className="family__main-text">
-                    <p className="family__main-text--p">
+                <div className="family__donate__main-text">
+                    <p className="family__donate__main-text--p">
                         All donations will go directly toward the care of our Salt of the Earth Sanctuary animals. This includes food, shelter, medical, and other animal care.
                     </p>
                     <div className="family__button">

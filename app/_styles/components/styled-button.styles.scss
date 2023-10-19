@@ -12,13 +12,20 @@
         color: $color-white;
     }
 
+    &__link {
+        @include hoverLift;
+        @include drop-shadow;
+    }
+
     &__style {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        background-color: $color-black;
+        //background-color: $color-black;
         //padding: 1rem 3rem;
+        background-image: url('/images/button.png');
+        background-size: cover;
         width: 14.5rem;
         height: 4.1rem;
     }

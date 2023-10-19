@@ -2,33 +2,108 @@
 
 .family {
 
+    &__header {
+        text-align: center;
+    }
+
+    &__carousel {
+        overflow: hidden;
+    }
+
     &__title {
         position: relative;
+        padding: 2rem 0;
+
+        border-right: .2rem solid;
+        border-image: linear-gradient(transparent 10%, $color-secondary-grey 10%, $color-secondary-grey 90%, transparent 90%) 1;
+
+        @include respond(small-phone) {
+            border: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__bottom-border {
+            position: absolute;
+            bottom: 0;
+            height: .2rem;
+            width: 89%;
+            background-color: $color-secondary-grey;
+
+            @include respond(small-phone) {
+                //width: 100%;
+                display: none;
+            }
+        }
 
         &__container {
             margin: 2rem 0;
+            padding-right: 2rem;
+
+            @include respond(small-phone) {
+                position: relative;
+                width: 20rem;
+            }
         }
+
         &__upper-text {
             @include upperHeading;
             font-size: 5rem;
             line-height: .9;
+
+            @include respond(phone) {
+                font-size: 4rem;
+            }
         }
+
         &__lower-text {
             @include lowerHeading;
             font-size: 3.2rem;
             line-height: .9;
             margin-top: -.5rem;
+
+            @include respond(phone) {
+                font-size: 2.2rem;
+            }
         }
+
         &__heart {
             position: absolute;
             z-index: -1;
-            top: 0;
-            right: 0;
-            //margin-right: 3.2rem;
+            top: 2rem;
+            right: 2rem;
+
+            @include respond(phone) {
+                width: 10rem;
+                height: 10.1rem;
+                top: -1rem;
+            }
         }
     }
 
     &__donate {
-        padding: 2rem 12rem;
+        //padding: 2rem 12rem;
+        //padding: 2rem 0;
+        //max-width: 60rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
+        border-bottom: .2rem solid $color-secondary-grey;
+
+        @include respond(small-phone) {
+           padding-bottom: 5.5rem;
+        }
+
+        &__main-text {
+            &--p {
+                @include respond(small-phone) {
+                    padding: 0 10vw;
+                }
+            }
+        }
     }
 }
