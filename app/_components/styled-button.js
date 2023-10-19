@@ -16,7 +16,6 @@ export default function StyledButton ({ buttonText }) {
 
         hearts.forEach((heart) => {
             heart.style.animationDelay = Math.random() + 's';
-            //heart.style.transitionDelay = Math.random() + 's';
         });
     }
 
