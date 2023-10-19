@@ -147,3 +147,31 @@ a {
     transform: translate(calc(-50% - 5rem));
   }
 }
+
+@keyframes float {
+  from {
+      transform: translateY(0);
+      opacity: 0;
+      z-index: -1;
+  }
+  to {
+      transform: translateY(-2rem);
+      opacity: 1;
+      z-index: -1;
+  }
+  /*0% {
+    //start
+    transform: translateY(0) translateX(.5rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-1.5rem) translateX(-.5rem);
+    opacity: 1;
+  }
+
+  100% {
+    //center
+    transform: translateY(-2rem) translateX(.5rem);
+    opacity: 1;
+  }*/
+}
