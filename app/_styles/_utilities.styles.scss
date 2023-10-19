@@ -1,5 +1,3 @@
-@import 'main.styles.scss';
-
 .flexLineBreak {
     flex-basis: 100%;
     height: 0;
@@ -15,5 +13,9 @@
         transform: rotate(-20deg);
         color: $color-brand-yellow;
     }
+}
+
+.section-margin {
+    margin: 10rem 0;
 }
 

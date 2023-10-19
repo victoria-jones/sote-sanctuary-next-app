@@ -1,0 +1,87 @@
+@import '../main.styles.scss';
+
+.goals {
+
+    &__container {
+        position: relative;
+
+        mask-repeat: no-repeat;
+        mask-image: url('/images/background-cutout.png');
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-image: url('/images/background-cutout.png');
+        background-color: $color-secondary-white;
+
+
+        padding: 0 4rem;
+
+        &__bg {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            opacity: .4;
+            z-index: -1;
+        }
+    }
+
+    &__heading {
+        transform: rotate(-90deg);
+        height: 10rem;
+        width: 40rem;
+        font-size: 6.5rem;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+
+        border-bottom: .2rem solid;
+        border-image: linear-gradient(to right, transparent 10%, $color-secondary-grey 10%, $color-secondary-grey 90%, transparent 90%) 1;
+    }
+
+    &__list {
+        position: relative;
+        z-index: 0;
+        padding: 3rem 0;
+
+        &__item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            height: 9rem;
+
+            &__text {
+                width: 70%;
+                padding-top: 3rem;
+            }
+
+            &__number {
+                position: absolute;
+                align-self: flex-start;
+                top: -5rem;
+                font-family: $heading-secondary-font;
+                color: $color-secondary-yellow;
+                font-size: 13rem;
+                //opacity: .3;
+                z-index: -1;
+            }
+        }
+    }
+
+    &__wishlist {
+        display: flex;
+        justify-content: center;
+        //align-items: center;
+
+        border-top: .2rem solid;
+        border-image: linear-gradient(to right, transparent 1%, $color-secondary-grey 1%, $color-secondary-grey 97%, transparent 97%) 1;
+
+        &__wrapper {
+            position: relative;
+            width: 65%;
+            //fix an issue with parts of the button disappearing when adding bg to goals__container
+            z-index: 0;
+        }
+
+    }
+}
