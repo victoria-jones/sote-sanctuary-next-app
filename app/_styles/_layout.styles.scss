@@ -122,6 +122,38 @@ header {
   grid-auto-flow: column;*/
 }
 
+/////////////////////
+/// GOALS GRID /////
+////////////////////
+
+.goals__container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 13rem 1fr 1fr 1fr;
+
+  align-items: center;
+
+  .goals__heading {
+    grid-row: 1 / -1;
+    grid-column: 1;
+  }
+
+  .goals__list {
+    grid-row: 1;
+    grid-column: 2 / -1;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .goals__wishlist {
+    grid-row: 2;
+    grid-column: 2 / -1;
+  }
+}
+
 
 /********************
         LAYOUT

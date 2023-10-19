@@ -21,7 +21,7 @@ export default function Logo ({ toggleColor, mobile, large }) {
                         src="/images/orange-leaves_large.png"
                         height={80}
                         width={300}
-                        alt=""
+                        alt="leaf image"
                     />
                 </div>
             </div>
@@ -60,7 +60,7 @@ export default function Logo ({ toggleColor, mobile, large }) {
                         src="/images/orange-leaves.png"
                         height={mobile ? 30 : 45}
                         width={mobile ? 139 : 154}
-                        alt=""
+                        alt="leaf image"
                     />
                 </div>
             </div>
