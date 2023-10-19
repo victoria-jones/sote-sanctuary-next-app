@@ -20,6 +20,7 @@ $heading-font: 'Bebas Neue', sans-serif;
 $heading-secondary-font: 'IM Fell Great Primer', serif;
 
 $default-font-size: 1.6rem;
+$heading-font-size: 4rem;
 
 $mobile-font-enlarge: 2.8rem;
 
@@ -36,6 +37,13 @@ $mobile-font-enlarge: 2.8rem;
     &:hover {
         transform: rotate(-20deg);
         color: $color-brand-yellow;
+    }
+}
+
+@mixin hoverLift () {
+    transition: all .3s;
+    &:hover {
+        transform: translateY(-.5rem);
     }
 }
 
@@ -61,5 +69,12 @@ $mobile-font-enlarge: 2.8rem;
     animation-name: bounce;
     animation-duration: .8s;
     animation-delay: $delay;
+    animation-iteration-count: infinite;
+}
+
+@mixin scroll-animation () {
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }

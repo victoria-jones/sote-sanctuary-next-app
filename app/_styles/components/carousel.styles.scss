@@ -1,0 +1,82 @@
+@import '../main.styles.scss';
+
+.carousel {
+    //display: flex;
+    //justify-content: space-between;
+    border-bottom: .2rem solid $color-secondary-grey;
+    border-top: .2rem solid $color-secondary-grey;
+    padding: 2rem 0;
+
+    &[data-animated="true"] &__scroller {
+        @include scroll-animation;
+    }
+
+    &__scroller:hover {
+        animation-play-state: paused;
+    }
+
+    &__scroller {
+        width: max-content;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10rem;
+        pointer-events: none;
+    }
+
+    &__animal-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 20rem;
+        height: 20rem;
+
+        //overflow: hidden;
+
+        pointer-events: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__animal-container:hover &__animal-heart {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &__animal-container:hover &__animal-name {
+        opacity: 1;
+    }
+
+    &__animal-image,
+    &__animal-heart,
+    &__animal-name {
+        position: absolute;
+    }
+
+    &__animal-name {
+        background-color: $color-black;
+        color: $color-white;
+        padding: .2rem 2rem;
+        top: 0;
+        left: 0;
+        text-align: center;
+        transform: rotate(-25deg);
+        opacity: 0;
+    }
+
+    &__animal-image {
+        z-index: -1;
+        @include drop-shadow;
+    }
+
+    &__animal-heart {
+        transition: all .3s;
+        z-index: -2;
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+}
+

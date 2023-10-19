@@ -78,21 +78,50 @@ header {
 .family {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 25.95rem 1fr 1fr 1fr;
   column-gap: 3rem;
 
   align-items: center;
+
+  @include respond(phone) {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+  @include respond(small-phone) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
   &__carousel {
     grid-column: 1 / -1;
   }
   &__title {
     grid-column: 1;
+
+    @include respond(small-phone) {
+      grid-column: 1 / -1;
+    }
   }
   &__donate {
     grid-column: 2 / -1;
+
+    @include respond(small-phone) {
+      grid-column: 1 / -1;
+    }
   }
+
 }
+
+/////////////////////
+/// CAROUSEL GRID ///
+////////////////////
+
+.carousel__scroller {
+  /*display: grid;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  grid-column-gap: 8.3rem;
+  grid-template-rows: 20rem;
+  grid-auto-flow: column;*/
+}
+
 
 /********************
         LAYOUT

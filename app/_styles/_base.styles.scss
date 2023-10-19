@@ -96,6 +96,10 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: $heading-font;
     color: $color-brand-yellow;
+    font-weight: normal;
+}
+h2{
+  font-size: $heading-font-size;
 }
 
 ul {
@@ -135,5 +139,11 @@ a {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
   }
 }
