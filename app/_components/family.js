@@ -34,7 +34,7 @@ export default function Family () {
             <div className="family__donate">
                 <div className="family__donate__main-text">
                     <p className="family__donate__main-text--p">
-                        All donations will go directly toward the care of our Salt of the Earth Sanctuary animals. This includes food, shelter, medical, and other animal care.
+                        All donations go directly toward the care of our Salt of the Earth Sanctuary animals. This includes food, shelter, medical, and other animal care.
                     </p>
                     <div className="family__button">
                         <StyledButton buttonText="Donate Here" />
