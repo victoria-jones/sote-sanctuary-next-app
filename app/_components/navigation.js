@@ -90,8 +90,8 @@ export default function Nav () {
                                             className="mobile__social-nav__link--image"
                                             priority
                                             src={instagram}
-                                            width={50}
-                                            height={50}
+                                            width={40}
+                                            height={40}
                                             alt="instagram icon"
                                         />
                                     </li>
@@ -105,8 +105,8 @@ export default function Nav () {
                                             className="mobile__social-nav__link--image"
                                             priority
                                             src={facebook}
-                                            width={50}
-                                            height={50}
+                                            width={40}
+                                            height={40}
                                             alt="instagram icon"
                                         />
                                     </li>
@@ -120,8 +120,8 @@ export default function Nav () {
                                             className="mobile__social-nav__link--image"
                                             priority
                                             src={tiktok}
-                                            width={50}
-                                            height={50}
+                                            width={40}
+                                            height={40}
                                             alt="instagram icon"
                                         />
                                     </li>
@@ -135,8 +135,8 @@ export default function Nav () {
                                             className="mobile__social-nav__link--image"
                                             priority
                                             src={youtube}
-                                            width={50}
-                                            height={50}
+                                            width={40}
+                                            height={40}
                                             alt="instagram icon"
                                         />
                                     </li>
@@ -184,8 +184,8 @@ export default function Nav () {
                                         className="social-nav__link--item--image"
                                         priority
                                         src={instagram}
-                                        width={30}
-                                        height={30}
+                                        width={25}
+                                        height={25}
                                         alt="instagram icon"
                                     />
                                 </li>
@@ -197,8 +197,8 @@ export default function Nav () {
                                         className="social-nav__link--item--image"
                                         priority
                                         src={facebook}
-                                        width={30}
-                                        height={30}
+                                        width={25}
+                                        height={25}
                                         alt="instagram icon"
                                     />
                                 </li>
@@ -210,8 +210,8 @@ export default function Nav () {
                                         className="social-nav__link--item--image"
                                         priority
                                         src={tiktok}
-                                        width={30}
-                                        height={30}
+                                        width={25}
+                                        height={25}
                                         alt="instagram icon"
                                     />
                                 </li>
@@ -223,8 +223,8 @@ export default function Nav () {
                                         className="social-nav__link--item--image"
                                         priority
                                         src={youtube}
-                                        width={30}
-                                        height={30}
+                                        width={25}
+                                        height={25}
                                         alt="instagram icon"
                                     />
                                 </li>
