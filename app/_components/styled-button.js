@@ -39,44 +39,44 @@ export default function StyledButton ({ buttonText }) {
             <div className="button__hearts">
                 <Image
                     className="button__heart"
-                    src="/images/heart.png"
+                    src="/images/heart-small.png"
                     width={20}
-                    height={21}
+                    height={20}
                     alt="heart icon"
                 />
                 <Image
                     className="button__heart"
-                    src="/images/heart.png"
+                    src="/images/heart-small.png"
                     width={20}
-                    height={21}
+                    height={20}
                     alt="heart icon"
                 />
                 <Image
                     className="button__heart"
-                    src="/images/heart.png"
+                    src="/images/heart-small.png"
                     width={20}
-                    height={21}
+                    height={20}
                     alt="heart icon"
                 />
                 <Image
                     className="button__heart"
-                    src="/images/heart.png"
+                    src="/images/heart-small.png"
                     width={20}
-                    height={21}
+                    height={20}
                     alt="heart icon"
                 />
                 <Image
                     className="button__heart"
-                    src="/images/heart.png"
+                    src="/images/heart-small.png"
                     width={20}
-                    height={21}
+                    height={20}
                     alt="heart icon"
                 />
                 <Image
                     className="button__heart"
-                    src="/images/heart.png"
+                    src="/images/heart-small.png"
                     width={20}
-                    height={21}
+                    height={20}
                     alt="heart icon"
                 />
             </div>
