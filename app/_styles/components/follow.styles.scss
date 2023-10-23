@@ -1,0 +1,62 @@
+@import '../main.styles.scss';
+
+.follow {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 7 / 5 ;
+    }
+
+    &__social-media {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+
+        margin-bottom: 4rem;
+
+        &__icon {
+            transition: .3s all;
+        }
+
+        &__link:hover &__icon {
+            @include hoverRotate;
+        }
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+
+        max-width: 44rem;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: .9;
+
+        //margin-bottom: 4rem;
+
+        &__top {
+            font-size: 5.5rem;
+        }
+
+        &__bottom {
+            font-family: $heading-secondary-font;
+            font-size: 5.1rem;
+            font-weight: normal;
+        }
+    }
+
+    &__paragraph {
+        margin-bottom: 0 !important;
+    }
+
+}

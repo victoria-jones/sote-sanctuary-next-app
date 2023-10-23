@@ -17,6 +17,10 @@
         border-right: .2rem solid;
         border-image: linear-gradient(transparent 10%, $color-secondary-grey 10%, $color-secondary-grey 90%, transparent 90%) 1;
 
+        @include respond(tab-port) {
+            padding-left: 1rem;
+        }
+
         @include respond(small-phone) {
             border: none;
             display: flex;

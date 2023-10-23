@@ -5,10 +5,6 @@ import Image from 'next/image';
 import Logo from './logo';
 import ViewportSize from './viewport-size';
 import '..//_styles/components/navigation.styles.scss';
-import instagram from '../../public/images/icons/instagram.svg';
-import facebook from '../../public/images/icons/facebook.svg';
-import tiktok from '../../public/images/icons/tiktok.svg';
-import youtube from '../../public/images/icons/youtube.svg';
 
 export default function Nav () {
     const { width } = ViewportSize();
@@ -89,7 +85,7 @@ export default function Nav () {
                                         <Image
                                             className="mobile__social-nav__link--image"
                                             priority
-                                            src={instagram}
+                                            src='/images/icons/instagram.svg'
                                             width={40}
                                             height={40}
                                             alt="instagram icon"
@@ -104,7 +100,7 @@ export default function Nav () {
                                         <Image
                                             className="mobile__social-nav__link--image"
                                             priority
-                                            src={facebook}
+                                            src='/images/icons/facebook.svg'
                                             width={40}
                                             height={40}
                                             alt="instagram icon"
@@ -119,7 +115,7 @@ export default function Nav () {
                                         <Image
                                             className="mobile__social-nav__link--image"
                                             priority
-                                            src={tiktok}
+                                            src='/images/icons/tiktok.svg'
                                             width={40}
                                             height={40}
                                             alt="instagram icon"
@@ -134,7 +130,7 @@ export default function Nav () {
                                         <Image
                                             className="mobile__social-nav__link--image"
                                             priority
-                                            src={youtube}
+                                            src='/images/icons/youtube.svg'
                                             width={40}
                                             height={40}
                                             alt="instagram icon"
@@ -183,7 +179,7 @@ export default function Nav () {
                                     <Image
                                         className="social-nav__link--item--image"
                                         priority
-                                        src={instagram}
+                                        src='/images/icons/instagram.svg'
                                         width={25}
                                         height={25}
                                         alt="instagram icon"
@@ -196,7 +192,7 @@ export default function Nav () {
                                     <Image
                                         className="social-nav__link--item--image"
                                         priority
-                                        src={facebook}
+                                        src='/images/icons/facebook.svg'
                                         width={25}
                                         height={25}
                                         alt="instagram icon"
@@ -209,7 +205,7 @@ export default function Nav () {
                                     <Image
                                         className="social-nav__link--item--image"
                                         priority
-                                        src={tiktok}
+                                        src='/images/icons/tiktok.svg'
                                         width={25}
                                         height={25}
                                         alt="instagram icon"
@@ -222,7 +218,7 @@ export default function Nav () {
                                     <Image
                                         className="social-nav__link--item--image"
                                         priority
-                                        src={youtube}
+                                        src='/images/icons/youtube.svg'
                                         width={25}
                                         height={25}
                                         alt="instagram icon"
