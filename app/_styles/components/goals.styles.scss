@@ -20,7 +20,7 @@
 
         @include respond(phone) {
             mask-image: none;
-            -webkit-maks-image: none;
+            -webkit-mask-image: none;
         }
 
         padding: 0 4rem;
@@ -31,6 +31,15 @@
             right: 0;
             opacity: .4;
             z-index: -1;
+
+            @include respond(between-phone-tab) {
+                display: none;
+            }
+
+            @include respond(phone) {
+                //change this to be the respond image starting 600px
+                max-width: 90%;
+            }
         }
     }
 
@@ -48,6 +57,9 @@
 
         @include respond(phone) {
             transform: rotate(0);
+        }
+        @include respond(small-phone) {
+            font-size: 5.5rem;
         }
     }
 
@@ -94,7 +106,7 @@
         &__wrapper {
             position: relative;
             width: 65%;
-            //fix an issue with parts of the button disappearing when adding bg to goals__container
+            //fixes an issue with parts of the button disappearing when adding bg to goals__container
             z-index: 0;
 
             @include respond(phone) {
