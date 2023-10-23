@@ -11,6 +11,17 @@
         -webkit-mask-image: url('/images/background-cutout.png');
         background-color: $color-secondary-white;
 
+        @include respond(between-phone-tab) {
+            mask-repeat: no-repeat;
+            mask-image: url('/images/background-cutout-small.png');
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-image: url('/images/background-cutout-small.png');
+        }
+
+        @include respond(phone) {
+            mask-image: none;
+            -webkit-maks-image: none;
+        }
 
         padding: 0 4rem;
 
@@ -34,6 +45,10 @@
 
         border-bottom: .2rem solid;
         border-image: linear-gradient(to right, transparent 10%, $color-secondary-grey 10%, $color-secondary-grey 90%, transparent 90%) 1;
+
+        @include respond(phone) {
+            transform: rotate(0);
+        }
     }
 
     &__list {
@@ -81,6 +96,14 @@
             width: 65%;
             //fix an issue with parts of the button disappearing when adding bg to goals__container
             z-index: 0;
+
+            @include respond(phone) {
+                width: 90%;
+            }
+        }
+
+        @include respond(phone) {
+            padding-bottom: 3rem;
         }
 
     }
