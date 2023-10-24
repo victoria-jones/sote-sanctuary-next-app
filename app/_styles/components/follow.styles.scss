@@ -1,6 +1,29 @@
 @import '../main.styles.scss';
 
 .follow {
+    position: relative;
+
+    &__image {
+        position: relative;
+        &--01,
+        &--10 {
+            aspect-ratio: 401 / 300;
+        }
+        &--02,
+        &--09 {
+            aspect-ratio: 504 / 300;
+        }
+        &--03,
+        &--04,
+        &--05,
+        &--06 {
+            aspect-ratio: 196 / 197;
+        }
+        &--07,
+        &--08 {
+            aspect-ratio: 196 / 404;
+        }
+    }
 
     &__container {
         display: flex;
@@ -8,6 +31,10 @@
         align-items: center;
         justify-content: center;
         aspect-ratio: 7 / 5 ;
+
+        @include respond(between-phone-tab) {
+            aspect-ratio: 11 / 9;
+        }
     }
 
     &__social-media {
@@ -34,6 +61,10 @@
         gap: 4rem;
 
         max-width: 44rem;
+
+        @include respond(small-phone) {
+            max-width: 90%;
+        }
     }
 
     &__title {
@@ -42,16 +73,22 @@
         align-items: center;
         line-height: .9;
 
-        //margin-bottom: 4rem;
-
         &__top {
             font-size: 5.5rem;
+
+            @include respond(small-phone) {
+                font-size: 4.5rem;
+            }
         }
 
         &__bottom {
             font-family: $heading-secondary-font;
             font-size: 5.1rem;
             font-weight: normal;
+
+            @include respond(small-phone) {
+                font-size: 4.1rem;
+            }
         }
     }
 
