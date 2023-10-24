@@ -1,70 +1,81 @@
+'use client';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import ViewportSize from './viewport-size';
 import '..//_styles/components/follow.styles.scss';
 
 export default function Follow () {
+    const { width } = ViewportSize();
+    const [ mobileView, setMobileView ] = useState(false);
+
+    useEffect(() => {
+        const mobileBreakpoint = 800;
+        width <= mobileBreakpoint ? setMobileView(true) : setMobileView(false);
+    }, [width]);
+
     return(
         <section className="follow main-section" id="follow-section">
             <Image className="follow__image follow__image--01"
                 src="/images/jasper-and-brent.png"
-                width={401}
-                height={300}
+                fill
                 alt="jasper the dog and brent riding in a car"
             />
             <Image className="follow__image follow__image--02"
                 src="/images/wednesday-and-beans.png"
-                width={504}
-                height={300}
+                fill
                 alt="wednesday the pig and beans the dog in the grass"
             />
             <Image className="follow__image follow__image--03"
                 src="/images/jezebel.png"
-                width={196}
-                height={197}
+                fill
                 alt="jezebel the dog with a cowboy hat"
             />
             <Image className="follow__image follow__image--04"
                 src="/images/heart.png"
-                width={196}
-                height={197}
+                fill
                 alt="heart icon"
             />
             <Image className="follow__image follow__image--05"
                 src="/images/beans.png"
-                width={196}
-                height={197}
+                fill
                 alt="fresh grown beans"
             />
             <Image className="follow__image follow__image--06"
                 src="/images/animal-portraits/goat-portrait_social-media.png"
-                width={196}
-                height={197}
+                fill
                 alt="portrait of a goat"
             />
             <Image className="follow__image follow__image--07"
                 src="/images/goats-running.png"
-                width={196}
-                height={404}
+                fill
                 alt="goats running across a bridge"
             />
             <Image className="follow__image follow__image--08"
                 src="/images/pumpkins.png"
-                width={196}
-                height={404}
+                fill
                 alt="fresh grown pumpkins"
             />
             <Image className="follow__image follow__image--09"
                 src="/images/wednesday-and-pond.png"
-                width={504}
-                height={300}
+                fill
                 alt="wednesday the pig grazing in the field next to the pond"
             />
             <Image className="follow__image follow__image--10"
                 src="/images/animal-portraits/lilith-portrait_social-media.png"
-                width={401}
-                height={300}
+                fill
                 alt="portrait of Lilith the dog"
             />
+            {
+                mobileView ? (
+                    <Image className="follow__image follow__image--11"
+                        src="/images/heart.png"
+                        fill
+                        alt="heart icon"
+                    />
+                ):
+                ( null )
+            }
 
             <div className="follow__container">
                 <div className="follow__social-media">
