@@ -26,6 +26,7 @@ export default function Family () {
                         src="/images/heart.png"
                         width={152}
                         height={153}
+                        alt="heart image"
                     />
                 </div>
                 <div className="family__title__bottom-border"></div>

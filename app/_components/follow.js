@@ -156,6 +156,7 @@ export default function Follow () {
                         src="/images/heart.png"
                         width={30}
                         height={31}
+                        alt="heart image"
                     />
                 </div>
             </div>
