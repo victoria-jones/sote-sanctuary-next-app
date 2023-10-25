@@ -16,18 +16,22 @@ body {
 
     @include respond(tab-port) {
       padding: 1rem;
+      position: fixed;
+      z-index: 5;
     }
+
   }
+
   main {
     grid-column: center-start/center-end;
     grid-row: 2;
   }
+
   footer {
     grid-column: full-start/full-end;
     grid-row: 3;
   }
 
-  header,
   main,
   footer {
     @include respond(tab-port) {
@@ -110,17 +114,6 @@ header {
 
 }
 
-/////////////////////
-/// CAROUSEL GRID ///
-////////////////////
-
-.carousel__scroller {
-  /*display: grid;
-  grid-template-columns: repeat(auto-fill, 20rem);
-  grid-column-gap: 8.3rem;
-  grid-template-rows: 20rem;
-  grid-auto-flow: column;*/
-}
 
 /////////////////////
 /// GOALS GRID /////
@@ -191,9 +184,9 @@ header {
   }
 }
 
-////////////////
-/// NAV GRID ///
-////////////////
+///////////////////
+/// FOLLOW GRID ///
+///////////////////
 
 .follow {
   display: grid;

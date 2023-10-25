@@ -1,12 +1,13 @@
 @import '../main.styles';
 
 header {
-    //background-color: pink;
-    //display: flex;
-    //justify-content: space-between;
+
+    @include respond(tab-port) {
+        width: 100%;
+        background: linear-gradient($color-white 60%, transparent 100%);
+    }
 
     .main-nav {
-        //background-color: orange;
         display: flex;
         align-items: center;
 
