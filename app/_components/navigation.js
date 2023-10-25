@@ -80,7 +80,7 @@ export default function Nav () {
                             <Link onClick={toggleMobileMenu}
                                 className="mobile__social-nav__link"
                                 target="blank"
-                                href="#">
+                                href="https://www.instagram.com/sote_sanctuary/">
                                     <li className="mobile__social-nav__link--item">
                                         <Image
                                             className="mobile__social-nav__link--image"
@@ -103,7 +103,7 @@ export default function Nav () {
                                             src='/images/icons/facebook.svg'
                                             width={40}
                                             height={40}
-                                            alt="instagram icon"
+                                            alt="facebook icon"
                                         />
                                     </li>
                             </Link>
@@ -118,7 +118,7 @@ export default function Nav () {
                                             src='/images/icons/tiktok.svg'
                                             width={40}
                                             height={40}
-                                            alt="instagram icon"
+                                            alt="tiktok icon"
                                         />
                                     </li>
                             </Link>
@@ -133,7 +133,7 @@ export default function Nav () {
                                             src='/images/icons/youtube.svg'
                                             width={40}
                                             height={40}
-                                            alt="instagram icon"
+                                            alt="youtube icon"
                                         />
                                     </li>
                             </Link>
@@ -174,7 +174,9 @@ export default function Nav () {
                 <nav className="social-nav">
                     <ul className="social-nav__list">
                         <Link className="social-nav__link"
-                            href="#">
+                            href="https://www.instagram.com/sote_sanctuary/"
+                            target="blank"
+                        >
                                 <li className="social-nav__link--item">
                                     <Image
                                         className="social-nav__link--item--image"
@@ -187,7 +189,9 @@ export default function Nav () {
                                 </li>
                         </Link>
                         <Link className="social-nav__link"
-                            href="#">
+                            href="#"
+                            target="blank"
+                        >
                                 <li className="social-nav__link--item">
                                     <Image
                                         className="social-nav__link--item--image"
@@ -195,12 +199,14 @@ export default function Nav () {
                                         src='/images/icons/facebook.svg'
                                         width={25}
                                         height={25}
-                                        alt="instagram icon"
+                                        alt="facebook icon"
                                     />
                                 </li>
                         </Link>
                         <Link className="social-nav__link"
-                            href="#">
+                            href="#"
+                            target="blank"
+                        >
                                 <li className="social-nav__link--item">
                                     <Image
                                         className="social-nav__link--item--image"
@@ -208,12 +214,15 @@ export default function Nav () {
                                         src='/images/icons/tiktok.svg'
                                         width={25}
                                         height={25}
-                                        alt="instagram icon"
+                                        alt="tiktok icon"
                                     />
                                 </li>
                         </Link>
                         <Link className="social-nav__link"
-                            href="#">
+                            href="#"
+                            target="blank"
+
+                        >
                                 <li className="social-nav__link--item">
                                     <Image
                                         className="social-nav__link--item--image"
@@ -221,7 +230,7 @@ export default function Nav () {
                                         src='/images/icons/youtube.svg'
                                         width={25}
                                         height={25}
-                                        alt="instagram icon"
+                                        alt="youtube icon"
                                     />
                                 </li>
                         </Link>

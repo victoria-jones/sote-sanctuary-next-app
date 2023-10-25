@@ -81,7 +81,7 @@ export default function Follow () {
                 <div className="follow__social-media">
                     <Link className="follow__social-media__link"
                         target="blank"
-                        href="#"
+                        href="https://www.instagram.com/sote_sanctuary/"
                     >
                         <Image
                             className="follow__social-media__icon"
@@ -103,7 +103,7 @@ export default function Follow () {
                             src='/images/icons/facebook.svg'
                             width={40}
                             height={40}
-                            alt="instagram icon"
+                            alt="facebook icon"
                         />
                     </Link>
 
@@ -117,7 +117,7 @@ export default function Follow () {
                             src='/images/icons/tiktok.svg'
                             width={40}
                             height={40}
-                            alt="instagram icon"
+                            alt="tiktok icon"
                         />
                     </Link>
 
@@ -131,7 +131,7 @@ export default function Follow () {
                             src='/images/icons/youtube.svg'
                             width={40}
                             height={40}
-                            alt="instagram icon"
+                            alt="youtube icon"
                         />
                     </Link>
                 </div>
