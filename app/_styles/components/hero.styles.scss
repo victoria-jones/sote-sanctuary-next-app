@@ -7,6 +7,10 @@
     height: 100vh;
     overflow: hidden;
 
+    @include respond(tab-port) {
+        margin-top: 5rem;
+    }
+
     &__logo-image-wrapper,
     &__image-wrapper {
         position: absolute;
