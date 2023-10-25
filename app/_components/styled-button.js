@@ -35,6 +35,7 @@ export default function StyledButton ({ buttonText }) {
                 src="/images/green-leaves.png"
                 width={280}
                 height={74}
+                alt="decorative leaves"
             />
             <div className="button__hearts">
                 <Image
