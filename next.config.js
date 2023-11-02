@@ -3,8 +3,6 @@
  */
 const nextConfig = {
     output: 'export',
-    // Add basePath
-    basePath: '/github-pages',
     images: {
         unoptimized: true,
     }
