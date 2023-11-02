@@ -12,6 +12,11 @@ export default function Follow () {
     useEffect(() => {
         const mobileBreakpoint = 800;
         width <= mobileBreakpoint ? setMobileView(true) : setMobileView(false);
+
+        //a fix for before viewport component is loaded
+        if(width === null) {
+            window.innerWidth > mobileBreakpoint ? setMobileView(false) : setMobileView(true);
+        }
     }, [width]);
 
     return(
