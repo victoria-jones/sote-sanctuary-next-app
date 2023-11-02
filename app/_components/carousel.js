@@ -8,7 +8,7 @@ export default function Carousel () {
     let carouselScroller = useRef(null);
     let carouselItems = useRef(null);
 
-    //onload useeffect
+    //onload useEffect
     useEffect(() => {
         //can only set after page loads
         carousel.current = document.querySelectorAll(".carousel")[0];
@@ -19,7 +19,7 @@ export default function Carousel () {
         if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             activateCarousel();
         }
-    },[0]);
+    },[]);
 
     const activateCarousel = () => {
         carousel.current.setAttribute("data-animated", true);   //will only be added when a user does not have reduced motion actived
