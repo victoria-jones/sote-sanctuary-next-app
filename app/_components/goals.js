@@ -48,7 +48,7 @@ export default function Goals () {
                     <div className="goals__wishlist__wrapper">
                         <h3>want to help us reach our goals?</h3>
                         <p className="goals__wishlist__text">
-                            By purchasing an item from the Sanctuary's Amazon wishlist you can personally
+                            By purchasing an item from the Sanctuary&apos;s Amazon wishlist you can personally
                             help us reach our goals and improve upon the Sanctuary and our community.
                         </p>
                         <StyledButton buttonText="Wishlist" />
