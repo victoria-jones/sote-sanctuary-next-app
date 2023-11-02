@@ -1,19 +1,19 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import '..//_styles/components/carousel.styles.scss';
 
 export default function Carousel () {
-    let carousel;
-    let carouselScroller;
-    let carouselItems;
+    let carousel = useRef(null);
+    let carouselScroller = useRef(null);
+    let carouselItems = useRef(null);
 
     //onload useeffect
     useEffect(() => {
         //can only set after page loads
-        carousel = document.querySelectorAll(".carousel")[0];
-        carouselScroller = carousel.querySelector(".carousel__scroller");
-        carouselItems = Array.from(carouselScroller.children);
+        carousel.current = document.querySelectorAll(".carousel")[0];
+        carouselScroller.current = carousel.current.querySelector(".carousel__scroller");
+        carouselItems.current = Array.from(carouselScroller.current.children);
 
         //check if person has reduced motion setting on browser before activating carousel
         if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -22,16 +22,16 @@ export default function Carousel () {
     },[0]);
 
     const activateCarousel = () => {
-        carousel.setAttribute("data-animated", true);   //will only be added when a user does not have reduced motion actived
+        carousel.current.setAttribute("data-animated", true);   //will only be added when a user does not have reduced motion actived
         duplicateScrollContent();
     }
 
     const duplicateScrollContent = () => {
-        carouselItems.forEach(item => {
+        carouselItems.current.forEach(item => {
             const dupeItem = item.cloneNode(true);
             //prevent dupe content from getting to usability stuff/readers
             dupeItem.setAttribute('aria-hidden', true);
-            carouselScroller.appendChild(dupeItem);
+            carouselScroller.current.appendChild(dupeItem);
         });
     }
 
