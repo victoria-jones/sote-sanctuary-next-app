@@ -1,3 +1,13 @@
 .buttonBackgroundImage {
     background-image: url('/sote-sanctuary-next-app/images/button.png');
 }
+
+.goalsContainerBackgroundImage {
+    -webkit-mask-image: url('/sote-sanctuary-next-app/images/background-cutout.png');
+    mask-image: url('/sote-sanctuary-next-app/images/background-cutout.png');
+
+    @include respond(between-phone-tab) {
+        mask-image: url('/sote-sanctuary-next-app/images/background-cutout-small.png');
+        -webkit-mask-image: url('/sote-sanctuary-next-app/images/background-cutout-small.png');
+    }
+}
