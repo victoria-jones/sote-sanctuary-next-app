@@ -10,7 +10,7 @@ export default function StyledButton ({ buttonText }) {
     const imageEnvGithub = process.env.IS_GITHUB_PAGES;
     let styles;
     if(process.env.IS_GITHUB_PAGES === 'true') {
-        styles = require('..//_styles/components/github-pages.styles.scss');
+        require('..//_styles/components/github-pages.styles.scss');
     }
 
     //so sass isn't working for me when trying to randmoly apply different transition times
