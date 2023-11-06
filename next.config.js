@@ -10,7 +10,7 @@ const nextConfig = {
     env: {
         IS_GITHUB_PAGES: process.env.GITHUB_PAGES === 'true',
     },
-    basePath: process.env.GITHUB_PAGES === true ? '/sote-sanctuary-next-app' : '',
+    basePath: process.env.GITHUB_PAGES === 'true' ? '/sote-sanctuary-next-app' : '',
 }
 
 module.exports = nextConfig
