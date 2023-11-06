@@ -9,6 +9,8 @@ export default function StyledButton ({ buttonText }) {
         //add another class to the element if the environment is github pages
     const imageEnvGithub = process.env.IS_GITHUB_PAGES;
     let styles;
+    console.log('ENV: ' + process.env.IS_GITHUB_PAGES);
+
     if(process.env.IS_GITHUB_PAGES === 'true') {
         require('..//_styles/components/github-pages.styles.scss');
     }
@@ -34,8 +36,7 @@ export default function StyledButton ({ buttonText }) {
                 href="#"
                 target="blank"
             >
-                <div className={`${process.env.IS_GITHUB_PAGES === 'true' ? styles.buttonBackgroundImage : ''}
-                    button__style buttonBackgroundImage`}>
+                <div className="button__style buttonBackgroundImage">
                     {buttonText}
                 </div>
             </Link>
