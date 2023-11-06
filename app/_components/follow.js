@@ -22,59 +22,59 @@ export default function Follow () {
     return(
         <section className="follow main-section" id="follow-section">
             <Image className="follow__image follow__image--01"
-                src="/images/jasper-and-brent.png"
+                src="images/jasper-and-brent.png"
                 fill
                 alt="jasper the dog and brent riding in a car"
             />
             <Image className="follow__image follow__image--02"
-                src="/images/wednesday-and-beans.png"
+                src="images/wednesday-and-beans.png"
                 fill
                 alt="wednesday the pig and beans the dog in the grass"
             />
             <Image className="follow__image follow__image--03"
-                src="/images/jezebel.png"
+                src="images/jezebel.png"
                 fill
                 alt="jezebel the dog with a cowboy hat"
             />
             <Image className="follow__image follow__image--04"
-                src="/images/heart.png"
+                src="images/heart.png"
                 fill
                 alt="heart icon"
             />
             <Image className="follow__image follow__image--05"
-                src="/images/beans.png"
+                src="images/beans.png"
                 fill
                 alt="fresh grown beans"
             />
             <Image className="follow__image follow__image--06"
-                src="/images/animal-portraits/goat-portrait_social-media.png"
+                src="images/animal-portraits/goat-portrait_social-media.png"
                 fill
                 alt="portrait of a goat"
             />
             <Image className="follow__image follow__image--07"
-                src="/images/goats-running.png"
+                src="images/goats-running.png"
                 fill
                 alt="goats running across a bridge"
             />
             <Image className="follow__image follow__image--08"
-                src="/images/pumpkins.png"
+                src="images/pumpkins.png"
                 fill
                 alt="fresh grown pumpkins"
             />
             <Image className="follow__image follow__image--09"
-                src="/images/wednesday-and-pond.png"
+                src="images/wednesday-and-pond.png"
                 fill
                 alt="wednesday the pig grazing in the field next to the pond"
             />
             <Image className="follow__image follow__image--10"
-                src="/images/animal-portraits/lilith-portrait_social-media.png"
+                src="images/animal-portraits/lilith-portrait_social-media.png"
                 fill
                 alt="portrait of Lilith the dog"
             />
             {
                 mobileView ? (
                     <Image className="follow__image follow__image--11"
-                        src="/images/heart.png"
+                        src="images/heart.png"
                         fill
                         alt="heart icon"
                     />
@@ -91,7 +91,7 @@ export default function Follow () {
                         <Image
                             className="follow__social-media__icon"
                             priority
-                            src='/images/icons/instagram.svg'
+                            src='images/icons/instagram.svg'
                             width={40}
                             height={40}
                             alt="instagram icon"
@@ -105,7 +105,7 @@ export default function Follow () {
                         <Image
                             className="follow__social-media__icon"
                             priority
-                            src='/images/icons/facebook.svg'
+                            src='images/icons/facebook.svg'
                             width={40}
                             height={40}
                             alt="facebook icon"
@@ -119,7 +119,7 @@ export default function Follow () {
                         <Image
                             className="follow__social-media__icon"
                             priority
-                            src='/images/icons/tiktok.svg'
+                            src='images/icons/tiktok.svg'
                             width={40}
                             height={40}
                             alt="tiktok icon"
@@ -133,7 +133,7 @@ export default function Follow () {
                         <Image
                             className="follow__social-media__icon"
                             priority
-                            src='/images/icons/youtube.svg'
+                            src='images/icons/youtube.svg'
                             width={40}
                             height={40}
                             alt="youtube icon"
@@ -158,7 +158,7 @@ export default function Follow () {
                     </p>
                     <Image
                         className="follow__heart"
-                        src="/images/heart.png"
+                        src="images/heart.png"
                         width={30}
                         height={31}
                         alt="heart image"

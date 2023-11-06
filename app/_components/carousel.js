@@ -47,7 +47,7 @@ export default function Carousel () {
                     </div>
                     <Image
                         className="carousel__animal-image"
-                        src="/images/animal-portraits/lilith-portrait.png"
+                        src="images/animal-portraits/lilith-portrait.png"
                         width={190}
                         height={190}
                         id="family-animal-image--01"
@@ -69,7 +69,7 @@ export default function Carousel () {
                         The General
                     </div>
                     <Image
-                        src="/images/animal-portraits/goat-portrait.png"
+                        src="images/animal-portraits/goat-portrait.png"
                         width={190}
                         height={190}
                         className="carousel__animal-image"
@@ -78,7 +78,7 @@ export default function Carousel () {
                     />
                     <Image className="carousel__animal-heart"
                         id="family-aninaml-heart--01"
-                        src="/images/heart-large.png"
+                        src="images/heart-large.png"
                         width={190}
                         height={192}
                         alt="heart"
@@ -92,7 +92,7 @@ export default function Carousel () {
                         BUGAWK
                     </div>
                     <Image
-                        src="/images/animal-portraits/chicken-portrait.png"
+                        src="images/animal-portraits/chicken-portrait.png"
                         width={190}
                         height={190}
                         className="carousel__animal-image"
@@ -101,7 +101,7 @@ export default function Carousel () {
                     />
                     <Image className="carousel__animal-heart"
                         id="family-aninaml-heart--01"
-                        src="/images/heart-large.png"
+                        src="images/heart-large.png"
                         width={190}
                         height={192}
                         alt="heart"
@@ -116,14 +116,14 @@ export default function Carousel () {
                     </div>
                     <Image className="carousel__animal-image"
                         id="family-animal-image--01"
-                        src="/images/animal-portraits/pig-portrait.png"
+                        src="images/animal-portraits/pig-portrait.png"
                         width={190}
                         height={190}
                         alt="animal image placeholder"
                     />
                     <Image className="carousel__animal-heart"
                         id="family-aninaml-heart--01"
-                        src="/images/heart-large.png"
+                        src="images/heart-large.png"
                         width={190}
                         height={192}
                         alt="heart"
