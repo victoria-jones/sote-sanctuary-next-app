@@ -7,9 +7,6 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    env: {
-        IS_GITHUB_PAGES: process.env.GITHUB_PAGES === 'true',
-    },
     basePath: process.env.GITHUB_PAGES === 'true' ? '/sote-sanctuary-next-app' : '',
 }
 
