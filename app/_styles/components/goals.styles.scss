@@ -5,10 +5,10 @@
     &__container {
         position: relative;
 
-        mask-repeat: no-repeat;
-        mask-image: url('/images/background-cutout.png');
         -webkit-mask-repeat: no-repeat;
         -webkit-mask-image: url('/images/background-cutout.png');
+        mask-repeat: no-repeat;
+        mask-image: url('/images/background-cutout.png');
         background-color: $color-secondary-white;
 
         @include respond(between-phone-tab) {

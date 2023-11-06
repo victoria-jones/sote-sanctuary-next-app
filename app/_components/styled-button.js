@@ -5,6 +5,10 @@ import Image from 'next/image';
 import '..//_styles/components/styled-button.styles.scss';
 
 export default function StyledButton ({ buttonText }) {
+    //github pages work around for issue with applying bg images with css
+        //add another class to the element if the environment is github pages
+    const imageEnvGithub = process.env.GITHUB_PAGES;
+
     //so sass isn't working for me when trying to randmoly apply different transition times
     //for the hearts so I guess we are doing it in javascsript now.
     useEffect(() => {
@@ -26,7 +30,9 @@ export default function StyledButton ({ buttonText }) {
                 href="#"
                 target="blank"
             >
-                <div className="button__style">
+                <div className={`${imageEnvGithub ? 'button__style__github' : ''}
+                    button__style
+                `}>
                     {buttonText}
                 </div>
             </Link>
