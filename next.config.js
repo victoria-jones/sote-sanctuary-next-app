@@ -8,7 +8,7 @@ const nextConfig = {
         unoptimized: true,
     },
     env: {
-        IS_GITHUB_PAGES: process.env.GITHUB_PAGES === true ? true : false,
+        IS_GITHUB_PAGES: process.env.GITHUB_PAGES === 'true' ? 'true' : 'false',
     },
     basePath: process.env.GITHUB_PAGES === 'true' ? '/sote-sanctuary-next-app' : '',
 }
