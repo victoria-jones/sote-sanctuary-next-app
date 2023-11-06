@@ -95,3 +95,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+        # Debug GITHUB_PAGES
+      - name: Debug GITHUB_PAGES
+        run: echo "GITHUB_PAGES:$GITHUB_PAGES"
