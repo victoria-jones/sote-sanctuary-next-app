@@ -55,7 +55,7 @@ export default function Carousel () {
                     />
                     <Image className="carousel__animal-heart"
                         id="family-aninaml-heart--01"
-                        src="/images/heart-large.png"
+                        src="images/heart-large.png"
                         width={190}
                         height={192}
                         alt="heart"
