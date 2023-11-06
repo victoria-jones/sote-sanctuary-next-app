@@ -34,7 +34,7 @@ export default function StyledButton ({ buttonText }) {
                 href="#"
                 target="blank"
             >
-                <div className={`${process.env.IS_GITHUB_PAGES === true ? 'buttonBackgroundImage' : ''}
+                <div className={`${process.env.IS_GITHUB_PAGES === true ? styles.buttonBackgroundImage : ''}
                     button__style`}>
                     {buttonText}
                 </div>
