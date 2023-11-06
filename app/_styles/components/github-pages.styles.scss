@@ -5,11 +5,11 @@
 }
 
 .goalsContainerBackgroundImage {
-    -webkit-mask-image: url('/sote-sanctuary-next-app/images/background-cutout.png');
-    mask-image: url('/sote-sanctuary-next-app/images/background-cutout.png');
+    -webkit-mask-image: url('/sote-sanctuary-next-app/images/background-cutout.png') !important;
+    mask-image: url('/sote-sanctuary-next-app/images/background-cutout.png') !important;
 
     @include respond(between-phone-tab) {
-        mask-image: url('/sote-sanctuary-next-app/images/background-cutout-small.png');
-        -webkit-mask-image: url('/sote-sanctuary-next-app/images/background-cutout-small.png');
+        mask-image: url('/sote-sanctuary-next-app/images/background-cutout-small.png') !important;
+        -webkit-mask-image: url('/sote-sanctuary-next-app/images/background-cutout-small.png') !important;
     }
 }
