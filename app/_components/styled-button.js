@@ -32,7 +32,7 @@ export default function StyledButton ({ buttonText }) {
             </Link>
             <Image
                 className="button__leaves"
-                src="/images/green-leaves.png"
+                src="images/green-leaves.png"
                 width={280}
                 height={74}
                 alt="decorative leaves"
@@ -40,42 +40,42 @@ export default function StyledButton ({ buttonText }) {
             <div className="button__hearts">
                 <Image
                     className="button__heart"
-                    src="/images/heart-small.png"
+                    src="images/heart-small.png"
                     width={20}
                     height={20}
                     alt="heart icon"
                 />
                 <Image
                     className="button__heart"
-                    src="/images/heart-small.png"
+                    src="images/heart-small.png"
                     width={20}
                     height={20}
                     alt="heart icon"
                 />
                 <Image
                     className="button__heart"
-                    src="/images/heart-small.png"
+                    src="images/heart-small.png"
                     width={20}
                     height={20}
                     alt="heart icon"
                 />
                 <Image
                     className="button__heart"
-                    src="/images/heart-small.png"
+                    src="images/heart-small.png"
                     width={20}
                     height={20}
                     alt="heart icon"
                 />
                 <Image
                     className="button__heart"
-                    src="/images/heart-small.png"
+                    src="images/heart-small.png"
                     width={20}
                     height={20}
                     alt="heart icon"
                 />
                 <Image
                     className="button__heart"
-                    src="/images/heart-small.png"
+                    src="images/heart-small.png"
                     width={20}
                     height={20}
                     alt="heart icon"

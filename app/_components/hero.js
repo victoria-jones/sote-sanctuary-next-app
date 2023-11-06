@@ -9,7 +9,7 @@ export default function Hero () {
                     className="hero__logo-image"
                     priority
                     fill
-                    src="/images/salt-of-the-earth-sanctuary_large-logo_large.png"
+                    src="images/salt-of-the-earth-sanctuary_large-logo_large.png"
                     alt="Salt of the Earth Sanctuary logo"
                 />
                 <div className="hero__logo-image-circle"></div>
@@ -18,7 +18,7 @@ export default function Hero () {
                 <Image
                     priority
                     className="hero__image"
-                    src="/images/waterfall_hero-image_large.png"
+                    src="images/waterfall_hero-image_large.png"
                     width={1120}
                     height={896}
                     alt="photo of a waterfall on the Salt of the Earth Sanctuary property"

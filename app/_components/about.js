@@ -12,7 +12,7 @@ export default function About () {
                 </div>
                 <div className="about__video">
                     <video width="100%" height="100%" muted autoPlay loop>
-                        <source src="/videos/pig-and-pond_sote-sanctuary_video.mp4" type="video/mp4" />
+                        <source src="videos/pig-and-pond_sote-sanctuary_video.mp4" type="video/mp4" />
                     </video>
                 </div>
 

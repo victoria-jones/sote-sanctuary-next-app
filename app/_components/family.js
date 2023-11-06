@@ -23,7 +23,7 @@ export default function Family () {
                     </div>
                     <Image
                         className="family__title__heart"
-                        src="/images/heart.png"
+                        src="images/heart.png"
                         width={152}
                         height={153}
                         alt="heart image"

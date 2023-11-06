@@ -22,7 +22,7 @@ export default function Logo ({ toggleColor, mobile, large }) {
 
                 <div className="logo__leaf logo__large__leaf">
                     <Image
-                        src="/images/orange-leaves_large.png"
+                        src="images/orange-leaves_large.png"
                         height={80}
                         width={300}
                         alt="leaf image"
@@ -61,7 +61,7 @@ export default function Logo ({ toggleColor, mobile, large }) {
                 <div className="logo__leaf">
                     <Image
                         priority
-                        src="/images/orange-leaves.png"
+                        src="images/orange-leaves.png"
                         height={mobile ? 30 : 45}
                         width={mobile ? 139 : 154}
                         alt="leaf image"

@@ -92,7 +92,7 @@ export default function Nav () {
                                         <Image
                                             className="mobile__social-nav__link--image"
                                             priority
-                                            src='/images/icons/instagram.svg'
+                                            src='images/icons/instagram.svg'
                                             width={40}
                                             height={40}
                                             alt="instagram icon"
@@ -107,7 +107,7 @@ export default function Nav () {
                                         <Image
                                             className="mobile__social-nav__link--image"
                                             priority
-                                            src='/images/icons/facebook.svg'
+                                            src='images/icons/facebook.svg'
                                             width={40}
                                             height={40}
                                             alt="facebook icon"
@@ -122,7 +122,7 @@ export default function Nav () {
                                         <Image
                                             className="mobile__social-nav__link--image"
                                             priority
-                                            src='/images/icons/tiktok.svg'
+                                            src='images/icons/tiktok.svg'
                                             width={40}
                                             height={40}
                                             alt="tiktok icon"
@@ -137,7 +137,7 @@ export default function Nav () {
                                         <Image
                                             className="mobile__social-nav__link--image"
                                             priority
-                                            src='/images/icons/youtube.svg'
+                                            src='images/icons/youtube.svg'
                                             width={40}
                                             height={40}
                                             alt="youtube icon"
@@ -188,7 +188,7 @@ export default function Nav () {
                                     <Image
                                         className="social-nav__link--item--image"
                                         priority
-                                        src='/images/icons/instagram.svg'
+                                        src='images/icons/instagram.svg'
                                         width={25}
                                         height={25}
                                         alt="instagram icon"
@@ -203,7 +203,7 @@ export default function Nav () {
                                     <Image
                                         className="social-nav__link--item--image"
                                         priority
-                                        src='/images/icons/facebook.svg'
+                                        src='images/icons/facebook.svg'
                                         width={25}
                                         height={25}
                                         alt="facebook icon"
@@ -218,7 +218,7 @@ export default function Nav () {
                                     <Image
                                         className="social-nav__link--item--image"
                                         priority
-                                        src='/images/icons/tiktok.svg'
+                                        src='images/icons/tiktok.svg'
                                         width={25}
                                         height={25}
                                         alt="tiktok icon"
@@ -234,7 +234,7 @@ export default function Nav () {
                                     <Image
                                         className="social-nav__link--item--image"
                                         priority
-                                        src='/images/icons/youtube.svg'
+                                        src='images/icons/youtube.svg'
                                         width={25}
                                         height={25}
                                         alt="youtube icon"

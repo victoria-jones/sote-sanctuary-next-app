@@ -57,7 +57,7 @@ export default function Goals () {
 
                 <Image
                     className="goals__container__bg"
-                    src="/images/animal-portraits/chicken-portrait_large.png"
+                    src="images/animal-portraits/chicken-portrait_large.png"
                     width={294}
                     height={374}
                     alt="chicken"
