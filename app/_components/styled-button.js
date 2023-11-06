@@ -8,6 +8,10 @@ export default function StyledButton ({ buttonText }) {
     //github pages work around for issue with applying bg images with css
         //add another class to the element if the environment is github pages
     const imageEnvGithub = process.env.IS_GITHUB_PAGES;
+    let styles;
+    if(process.env.IS_GITHUB_PAGES === true) {
+        styles = require('..//_styles/components/github-pages.styles.scss');
+    }
 
     //so sass isn't working for me when trying to randmoly apply different transition times
     //for the hearts so I guess we are doing it in javascsript now.
@@ -30,7 +34,7 @@ export default function StyledButton ({ buttonText }) {
                 href="#"
                 target="blank"
             >
-                <div className={`${imageEnvGithub ? 'button__style__github' : ''}
+                <div className={`${imageEnvGithub ? 'buttonBackgroundImage' : ''}
                     button__style`}>
                     {buttonText}
                 </div>
