@@ -7,10 +7,6 @@ import '..//_styles/components/styled-button.styles.scss';
 export default function StyledButton ({ buttonText }) {
     //github pages work around for issue with applying bg images with css
         //add another class to the element if the environment is github pages
-    const imageEnvGithub = process.env.IS_GITHUB_PAGES;
-    let styles;
-    console.log('ENV: ' + process.env.IS_GITHUB_PAGES);
-
     if(process.env.IS_GITHUB_PAGES === 'true') {
         require('..//_styles/components/github-pages.styles.scss');
     }

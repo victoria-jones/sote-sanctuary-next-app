@@ -3,9 +3,15 @@ import StyledButton from './styled-button';
 import '..//_styles/components/goals.styles.scss';
 
 export default function Goals () {
+    //github pages work around for issue with applying bg images with css
+    //add another class to the element if the environment is github pages
+    if(process.env.IS_GITHUB_PAGES === 'true') {
+        require('..//_styles/components/github-pages.styles.scss');
+    }
+
     return(
         <section className="goals main-section section-margin" id="goals-section">
-            <div className="goals__container">
+            <div className="goals__container goalsContainerBackgroundImage">
 
                 <h2 className="goals__heading">
                     Sanctuary Goals
