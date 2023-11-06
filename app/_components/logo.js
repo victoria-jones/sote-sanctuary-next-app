@@ -3,6 +3,10 @@ import '..//_styles/components/logo.styles.scss';
 
 
 export default function Logo ({ toggleColor, mobile, large }) {
+    const mediaSrc = process.env.IS_GITHUB_PAGES ?
+        '/sote-sanctuary-next-app/' :
+        null;
+
     if (large) {
         return (
             <div className={`logo logo__large
