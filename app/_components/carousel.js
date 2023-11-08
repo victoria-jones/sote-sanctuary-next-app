@@ -73,7 +73,7 @@ export default function Carousel () {
                         width={190}
                         height={190}
                         className="carousel__animal-image"
-                        id="family-animal-image--01"
+                        id="family-animal-image--02"
                         alt="animal image placeholder"
                     />
                     <Image className="carousel__animal-heart"
@@ -96,7 +96,7 @@ export default function Carousel () {
                         width={190}
                         height={190}
                         className="carousel__animal-image"
-                        id="family-animal-image--01"
+                        id="family-animal-image--03"
                         alt="animal image placeholder"
                     />
                     <Image className="carousel__animal-heart"
@@ -112,14 +112,14 @@ export default function Carousel () {
                     carousel__animal-container--04
                 ">
                     <div className="carousel__animal-name">
-                        Pigsly
+                        Jasper
                     </div>
                     <Image className="carousel__animal-image"
-                        id="family-animal-image--01"
-                        src="images/animal-portraits/pig-portrait.png"
+                        id="family-animal-image--04"
+                        src="images/animal-portraits/jasper-portrait.png"
                         width={190}
                         height={190}
-                        alt="animal image placeholder"
+                        alt="Jasper the dog"
                     />
                     <Image className="carousel__animal-heart"
                         id="family-aninaml-heart--01"
