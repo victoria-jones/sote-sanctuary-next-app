@@ -66,18 +66,18 @@ export default function Carousel () {
                     carousel__animal-container--02
                 ">
                     <div className="carousel__animal-name">
-                        The General
+                        Jezabelle
                     </div>
                     <Image
-                        src="images/animal-portraits/goat-portrait.png"
+                        src="images/animal-portraits/jezabelle-portrait.png"
                         width={190}
                         height={190}
                         className="carousel__animal-image"
                         id="family-animal-image--02"
-                        alt="animal image placeholder"
+                        alt="Jezabelle the livestock guardian dog of Salt of the Earth Sanctuary"
                     />
                     <Image className="carousel__animal-heart"
-                        id="family-aninaml-heart--01"
+                        id="family-aninaml-heart--02"
                         src="images/heart-large.png"
                         width={190}
                         height={192}
@@ -89,18 +89,18 @@ export default function Carousel () {
                     carousel__animal-container--03
                 ">
                     <div className="carousel__animal-name">
-                        BUGAWK
+                        Bobby
                     </div>
                     <Image
-                        src="images/animal-portraits/chicken-portrait.png"
+                        src="images/animal-portraits/bobby-portrait.png"
                         width={190}
                         height={190}
                         className="carousel__animal-image"
                         id="family-animal-image--03"
-                        alt="animal image placeholder"
+                        alt="Robert (Bobby) Fischer the family dog"
                     />
                     <Image className="carousel__animal-heart"
-                        id="family-aninaml-heart--01"
+                        id="family-aninaml-heart--03"
                         src="images/heart-large.png"
                         width={190}
                         height={192}
@@ -119,10 +119,32 @@ export default function Carousel () {
                         src="images/animal-portraits/jasper-portrait.png"
                         width={190}
                         height={190}
-                        alt="Jasper the dog"
+                        alt="Jasper the family dog"
                     />
                     <Image className="carousel__animal-heart"
-                        id="family-aninaml-heart--01"
+                        id="family-aninaml-heart--04"
+                        src="images/heart-large.png"
+                        width={190}
+                        height={192}
+                        alt="heart"
+                    />
+                </div>
+
+                <div className="carousel__animal-container
+                    carousel__animal-container--05
+                ">
+                    <div className="carousel__animal-name">
+                        Bruce
+                    </div>
+                    <Image className="carousel__animal-image"
+                        id="family-animal-image--05"
+                        src="images/animal-portraits/bruce-portrait.png"
+                        width={190}
+                        height={190}
+                        alt="Bruce Wayne the family dog"
+                    />
+                    <Image className="carousel__animal-heart"
+                        id="family-aninaml-heart--05"
                         src="images/heart-large.png"
                         width={190}
                         height={192}
