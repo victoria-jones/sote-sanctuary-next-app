@@ -152,6 +152,28 @@ export default function Carousel () {
                     />
                 </div>
 
+                <div className="carousel__animal-container
+                    carousel__animal-container--06
+                ">
+                    <div className="carousel__animal-name">
+                        Aslan
+                    </div>
+                    <Image className="carousel__animal-image"
+                        id="family-animal-image--06"
+                        src="images/animal-portraits/aslan-portrait.png"
+                        width={190}
+                        height={190}
+                        alt="Aslan the livestock guardian dog of Salt of the Earth Sanctuary"
+                    />
+                    <Image className="carousel__animal-heart"
+                        id="family-aninaml-heart--06"
+                        src="images/heart-large.png"
+                        width={190}
+                        height={192}
+                        alt="heart"
+                    />
+                </div>
+
             </div>
         </div>
     );
