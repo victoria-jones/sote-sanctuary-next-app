@@ -32,7 +32,7 @@ export default function Goals () {
                     </li>
                     <li className="goals__list__item">
                         <p className="goals__list__item__text">
-                            Adopt more animals.
+                            Build a barn and indoor riding arena
                         </p>
                         <div className="goals__list__item__number">3.</div>
                     </li>
@@ -44,7 +44,7 @@ export default function Goals () {
                     </li>
                     <li className="goals__list__item">
                         <p className="goals__list__item__text">
-                            Upgrade the property power grid by getting more solar panels and batteries.
+                            Get more solar panels and batteries for the ability to use heat lamps and more food storage freezers.
                         </p>
                         <div className="goals__list__item__number">5.</div>
                     </li>

@@ -10,7 +10,7 @@ export default function Footer () {
                 <Logo toggleColor />
             </div>
             <section className="footer__text">
-                <p className="footer__text__paragraph">a non-profit farm and sanctuary for all</p>
+                <p className="footer__text__paragraph">Non-profit rescue and farmstead</p>
                 <p className="footer__text__paragraph">© {year}</p>
             </section>
         </footer>

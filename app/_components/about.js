@@ -21,13 +21,31 @@ export default function About () {
 
             <div className="about__text">
                 <p>
-                Salt of the Earth Sanctuary is a sustainable off grid farmstead dedicated to
-                the wellness of animals and the community. We are always striving to improve
-                upon and be a safe place for all, animal or human. Our property is a carefully
-                maintained and cared for, pesticide free, 140 acre property with a spring and
-                ponds. Our future plans include providing safe and clean produce for the
-                community. We want to be a place where people or animals can seek sanctuary
-                while becoming contributing members of the community.
+                Salt of the Earth Sanctuary is a sustainable off grid farmstead
+                located in the Sierra Mountains dedicated to the wellness of
+                animals and the community. We are always striving to improve
+                upon and be a safe space for all, animal or human. Our property
+                is a carefully maintained and cared for 140 acre property with
+                flowing natural springs and ponds for our furry friends. Our
+                future plans include providing safe and clean produce for the
+                community from our expanding farmstead. We strive to be a place
+                where people or animals can seek sanctuary while becoming
+                contributing members of the community by offering programs and
+                resources.
+                </p>
+                <p>
+                Our property is a sanctuary focused on rehabilitation of animals
+                and people in the community. We plan on building apartments/kennels
+                to rescue more dogs from breeders and kill shelters while taking in
+                those that need help getting back on track. Our rehabilitation
+                program pairs dogs/goats and future horses with people to give each
+                other purpose and on the right track to their forever home. Becoming
+                a non profit organization is allowing us to verify our status in
+                order to ask for grants and donations to build as needed. We&apos;ve
+                already invested 1million and realized these past three years its the
+                way to go. Also if the person doesn&apos;t want to work with animals we
+                have the farm to table program which is just farming,
+                preserving/processing and cooking.
                 </p>
             </div>
         </section>

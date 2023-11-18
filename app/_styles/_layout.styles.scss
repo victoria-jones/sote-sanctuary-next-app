@@ -62,7 +62,8 @@ header {
 
 .about {
   display: grid;
-  grid-template-rows: 50rem;
+  //grid-template-rows: 50rem;
+  grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   column-gap: 5rem;
 
