@@ -18,7 +18,7 @@ $basic-padding: 2rem 3rem;
 
 /******* fonts ********/
 $body-font: 'Jost', sans-serif;
-$heading-font: 'Bebas Neue', sans-serif;
+$heading-font: 'Josefin Sans', sans-serif;
 $heading-secondary-font: 'IM Fell Great Primer', serif;
 
 $default-font-size: 1.6rem;
@@ -56,6 +56,8 @@ $mobile-font-enlarge: 2.8rem;
 @mixin upperHeading () {
     font-family: $heading-font;
     color: $color-brand-yellow;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 @mixin lowerHeading () {
