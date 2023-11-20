@@ -85,6 +85,7 @@
             font-family: $heading-secondary-font;
             font-size: 5.1rem;
             font-weight: normal;
+            text-transform: lowercase;
 
             @include respond(small-phone) {
                 font-size: 4.1rem;

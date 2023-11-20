@@ -52,7 +52,7 @@
 
         &__upper-text {
             @include upperHeading;
-            font-size: 5rem;
+            font-size: 4rem;
             line-height: .9;
 
             @include respond(phone) {
