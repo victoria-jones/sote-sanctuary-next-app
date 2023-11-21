@@ -12,22 +12,26 @@ export default function Logo ({ toggleColor, mobile, large }) {
             <div className={`logo logo__large
                 ${toggleColor ? 'logo__white' : ''}
             `}>
-                <div className="logo__top logo__large__top">
-                    salt of the earth
-                </div>
 
-                <div className="logo__bottom logo__large__bottom">
-                    sanctuary
-                </div>
+                {
+                    toggleColor ? (
+                        <Image
+                            src="images/logo/sote-sanctuary-logo-text_white.png"
+                            height={70}
+                            width={236}
+                            alt="Salt of the Earth Sanctuary Logo"
+                        />
+                    ):
+                    (
+                        <Image
+                            src="images/logo/sote-sanctuary-logo-text.png"
+                            height={70}
+                            width={236}
+                            alt="Salt of the Earth Sanctuary Logo"
+                        />
+                    )
+                }
 
-                <div className="logo__leaf logo__large__leaf">
-                    <Image
-                        src="images/orange-leaves_large.png"
-                        height={80}
-                        width={300}
-                        alt="leaf image"
-                    />
-                </div>
             </div>
         );
     } else {
@@ -38,35 +42,41 @@ export default function Logo ({ toggleColor, mobile, large }) {
             `}>
                 {
                     mobile ? (
-                        <div className="logo__top-mobile">
-                            sote
-                        </div>
-                    ) : (
-                        <div className="logo__top">
-                            salt of the earth
-                        </div>
-                    )
-                }
-                {
-                    mobile ? (
-                        null
+                        toggleColor ? (
+                            <Image
+                                src="images/logo/sote-sanctuary-logo-abbreviation_white.png"
+                                height={30}
+                                width={109}
+                                alt="Salt of the Earth Sanctuary Logo"
+                            />
+                        ) : (
+                            <Image
+                                src="images/logo/sote-sanctuary-logo-abbreviation.png"
+                                height={30}
+                                width={109}
+                                alt="Salt of the Earth Sanctuary Logo"
+                            />
+                        )
                     ) :
                     (
-                        <div className="logo__bottom">
-                            sanctuary
-                        </div>
+                        toggleColor ? (
+                            <Image
+                                src="images/logo/sote-sanctuary-logo-text_white.png"
+                                height={70}
+                                width={236}
+                                alt="Salt of the Earth Sanctuary Logo"
+                            />
+                        ):
+                        (
+                            <Image
+                                src="images/logo/sote-sanctuary-logo-text.png"
+                                height={70}
+                                width={236}
+                                alt="Salt of the Earth Sanctuary Logo"
+                            />
+                        )
                     )
                 }
-
-                <div className="logo__leaf">
-                    <Image
-                        priority
-                        src="images/orange-leaves.png"
-                        height={mobile ? 30 : 45}
-                        width={mobile ? 139 : 154}
-                        alt="leaf image"
-                    />
-                </div>
             </div>
         );
     }

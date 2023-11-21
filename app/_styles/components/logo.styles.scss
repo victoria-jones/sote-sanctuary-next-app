@@ -5,45 +5,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    color: $color-black;
-
-    &__top {
-        font-family: $heading-secondary-font;
-        font-size: 1.85rem;
-        margin-bottom: -1rem;
-    }
-
-    &__bottom {
-        font-family: $heading-font;
-        font-size: 3.5rem;
-        margin-bottom: -4.2rem;
-        display: relative;
-        z-index: 1;
-    }
-
-    &__white {
-        color: $color-white;
-    }
-
-    &__mobile {
-        margin-top: -2rem;
-    }
-    &__top-mobile {
-        font-family: $heading-secondary-font;
-        font-size: 4.5rem;
-        margin-bottom: -3.5rem;
-    }
-
-    &__large {
-        &__top {
-            font-size: 3.5rem;
-        }
-        &__bottom {
-            font-size: 6.5rem;
-        }
-        &__leaf {
-            margin-top: -3.4rem;
-        }
-    }
 }
