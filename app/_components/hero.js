@@ -9,7 +9,7 @@ export default function Hero () {
                     className="hero__logo-image"
                     priority
                     fill
-                    src="images/salt-of-the-earth-sanctuary_large-logo_large.png"
+                    src="images/logo/sote-sanctuary-logo.png"
                     alt="Salt of the Earth Sanctuary logo"
                 />
                 <div className="hero__logo-image-circle"></div>
