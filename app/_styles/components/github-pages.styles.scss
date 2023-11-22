@@ -12,4 +12,9 @@
         mask-image: url('/sote-sanctuary-next-app/images/background-cutout-small.png') !important;
         -webkit-mask-image: url('/sote-sanctuary-next-app/images/background-cutout-small.png') !important;
     }
+
+    @include respond(phone) {
+        mask-image: none !important;
+        -webkit-mask-image: none !important;
+    }
 }
