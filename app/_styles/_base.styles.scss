@@ -79,6 +79,10 @@ body {
 }
 
 //END BROWSER RESET
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: $color-white;
 }
