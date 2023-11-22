@@ -1,9 +1,14 @@
 import Image from 'next/image';
 import '..//_styles/components/hero.styles.scss';
+import FeaturedBanner from './featured-banner.js';
 
 export default function Hero () {
     return(
         <section className="hero">
+            <FeaturedBanner
+                addClass="hero__featured-banner"
+            />
+
             <div className="hero__logo-image-wrapper">
                 <Image
                     className="hero__logo-image"

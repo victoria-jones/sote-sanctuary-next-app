@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import '..//_styles/components/styled-button.styles.scss';
 
-export default function StyledButton ({ buttonText }) {
+export default function StyledButton ({ buttonText, buttonLink }) {
     //github pages work around for issue with applying bg images with css
         //add another class to the element if the environment is github pages
     if(process.env.IS_GITHUB_PAGES === 'true') {
@@ -29,7 +29,9 @@ export default function StyledButton ({ buttonText }) {
     return(
         <div className="button">
             <Link className="button__link"
-                href="#"
+                href={
+                    buttonLink ? buttonLink : '#'
+                }
                 target="blank"
             >
                 <div className="button__style buttonBackgroundImage">
