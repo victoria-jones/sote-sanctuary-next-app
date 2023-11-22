@@ -32,6 +32,7 @@ export default function RescueFeature () {
                         Rescue of the Month
                     </h2>
 
+                    <div className="rescue-feature__p-wrapper">
                     <p className="rescue-feature__p">
                     On November 17th 2023 around 4pm, we were driving along on
                     highway 5 when suddenly a tiny puppy was seen on the side
@@ -44,7 +45,15 @@ export default function RescueFeature () {
                     around 6 weeks of age.
                     </p>
 
-                    <StyledButton buttonText="Adopt Me!" />
+                    <p className="rescue-feature__p">
+                    If you are interested in this little guy or want more information please email
+                    us at: <span className="text-highlight">saltoftheearthsanctuary@gmail.com</span> or click the adopt
+                    me! button below.
+                    </p>
+
+                    </div>
+
+                    <StyledButton buttonText="Adopt Me!" buttonLink="mailto:saltoftheearthsanctuary@gmail.com" />
 
                 </div>
             </RippedEdgeContainer>
