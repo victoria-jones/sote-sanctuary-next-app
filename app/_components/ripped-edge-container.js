@@ -8,7 +8,7 @@ export default function RippedEdgeContainer ({ children, addClass }) {
     }
 
     return(
-        <div className={`ripped-edge-container
+        <div className={`ripped-edge-container goalsContainerBackgroundImage
             ${ addClass ? addClass : ''}
         `}>
             { children }

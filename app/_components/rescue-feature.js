@@ -4,6 +4,7 @@ import StyledButton from './styled-button';
 import '..//_styles/components/rescue-feature.styles.scss';
 
 export default function RescueFeature () {
+
     return(
         <div className="rescue-feature main-section section-margin" id="rescue-feature-section">
             <RippedEdgeContainer addClass="rescue-feature__container">
