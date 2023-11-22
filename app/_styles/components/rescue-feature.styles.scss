@@ -1,0 +1,49 @@
+@import '../main.styles.scss';
+
+.rescue-feature {
+    &__container {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem 4rem;
+
+        @include respond(between-phone-tab) {
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 10rem;
+        }
+
+        @include respond(phone) {
+            padding: 2rem;
+        }
+    }
+
+    &__image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__leaves {
+            position: absolute;
+            bottom: 5rem;
+        }
+    }
+
+    &__heading {
+        @include respond(large-phone) {
+            font-size: 3rem;
+        }
+    }
+
+    &__info {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__p {
+        padding-bottom: 2rem;
+    }
+}

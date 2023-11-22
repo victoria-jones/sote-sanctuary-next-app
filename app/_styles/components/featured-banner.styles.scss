@@ -1,0 +1,43 @@
+@import '../main.styles.scss';
+
+.featured-banner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 71.7rem;
+    height: 6.1rem;
+
+    &__text-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        width: 90%;
+        height: 3.7rem;
+        //background-color: lightblue;
+
+        @include respond(phone) {
+            gap: 1rem;
+        }
+
+        @include respond(small-phone) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__heart {
+        @include respond(small-phone) {
+            display: none;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        z-index: -1;
+        @include drop-shadow;
+    }
+}

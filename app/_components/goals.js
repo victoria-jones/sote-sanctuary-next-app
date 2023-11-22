@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import StyledButton from './styled-button';
+import RippedEdgeContainer from './ripped-edge-container';
 import '..//_styles/components/goals.styles.scss';
 
 export default function Goals () {
@@ -11,8 +12,7 @@ export default function Goals () {
 
     return(
         <section className="goals main-section section-margin" id="goals-section">
-            <div className="goals__container goalsContainerBackgroundImage">
-
+            <RippedEdgeContainer addClass="goals__container">
                 <h2 className="goals__heading">
                     Sanctuary Goals
                 </h2>
@@ -57,7 +57,7 @@ export default function Goals () {
                             By purchasing an item from the Sanctuary&apos;s Amazon wishlist you can personally
                             help us reach our goals and improve upon the Sanctuary and our community.
                         </p>
-                        <StyledButton buttonText="Wishlist" />
+                        <StyledButton buttonText="Wishlist" buttonLink="https://www.amazon.com/hz/wishlist/ls/8MSZ6J3CJ5M6?ref_=wl_share" />
                     </div>
                 </div>
 
@@ -68,7 +68,7 @@ export default function Goals () {
                     height={374}
                     alt="chicken"
                 />
-            </div>
+            </RippedEdgeContainer>
         </section>
     );
 }
