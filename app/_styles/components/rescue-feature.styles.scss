@@ -23,9 +23,17 @@
         justify-content: center;
         align-items: center;
 
+        &__image {
+            @include respond(between-phone-tab) {
+                width: 25rem;
+                height: 25rem;
+            }
+        }
+
         &__leaves {
             position: absolute;
-            bottom: 5rem;
+            //bottom: 5rem;
+            bottom: 20%;
         }
     }
 
@@ -43,7 +51,7 @@
         justify-content: center;
     }
 
-    &__p {
+    &__p-wrapper {
         padding-bottom: 2rem;
     }
 }
