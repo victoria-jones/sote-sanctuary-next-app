@@ -78,6 +78,11 @@ export default function Nav () {
                             <Link onClick={toggleMobileMenu}
                                 className="mobile__main-nav__link"
                                 href="#family-section">
+                                <li className="mobile__main-nav__link--item">adopt</li>
+                            </Link>
+                            <Link onClick={toggleMobileMenu}
+                                className="mobile__main-nav__link"
+                                href="#family-section">
                                 <li className="mobile__main-nav__link--item">donate</li>
                             </Link>
                         </ul>
@@ -165,6 +170,10 @@ export default function Nav () {
                         <Link className="main-nav__link"
                             href="#goals-section">
                             <li className="main-nav__link--item">goals</li>
+                        </Link>
+                        <Link className="main-nav__link"
+                            href="#family-section">
+                            <li className="main-nav__link--item">adopt</li>
                         </Link>
                         <Link className="main-nav__link"
                             href="#family-section">
