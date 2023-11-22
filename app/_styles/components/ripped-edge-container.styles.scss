@@ -17,8 +17,8 @@
     }
 
     @include respond(phone) {
-        mask-image: none !important;
-        -webkit-mask-image: none !important;
+        mask-image: none;
+        -webkit-mask-image: none;
     }
 
     padding: 0 4rem;

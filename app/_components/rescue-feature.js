@@ -4,6 +4,11 @@ import StyledButton from './styled-button';
 import '..//_styles/components/rescue-feature.styles.scss';
 
 export default function RescueFeature () {
+    //github pages work around for issue with applying bg images with css
+    //add another class to the element if the environment is github pages
+    if(process.env.IS_GITHUB_PAGES === 'true') {
+        require('..//_styles/components/github-pages.styles.scss');
+    }
 
     return(
         <div className="rescue-feature main-section section-margin" id="rescue-feature-section">
