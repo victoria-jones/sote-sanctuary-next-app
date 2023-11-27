@@ -8,7 +8,7 @@ export default function Family () {
         <section className="family main-section" id="family-section">
 
             <div className="family__carousel">
-                <h2 className="family__header">Meet our Family</h2>
+                <h2 className="family__header">Meet our Pack</h2>
 
                 <Carousel />
             </div>

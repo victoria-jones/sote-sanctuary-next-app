@@ -21,31 +21,43 @@ export default function About () {
 
             <div className="about__text">
                 <p>
-                Salt of the Earth Sanctuary is a sustainable off grid farmstead
-                located in the Sierra Mountains dedicated to the wellness of
-                animals and the community. We are always striving to improve
-                upon and be a safe space for all, animal or human. Our property
-                is a carefully maintained and cared for 140 acre property with
-                flowing natural springs and ponds for our furry friends. Our
-                future plans include providing safe and clean produce for the
-                community from our expanding farmstead. We strive to be a place
-                where people or animals can seek sanctuary while becoming
+                Salt of the Earth Sanctuary is a sustainable, off-grid farmstead
+                located in the Sierra Mountains.  Dedicated to the wellness of
+                animals and the community, we are always striving to improve and
+                be a safe space for all, animal or human.
+                </p>
+                <p>
+                Our property is over 140 acres of carefully-maintained and cared-for
+                land, with flowing natural springs and ponds for our furry friends.
+                </p>
+                <p>
+                Our future plans also include providing safe and clean produce for
+                the community from our expanding farmstead. We strive to be a place
+                where both people and animals can seek sanctuary while becoming
                 contributing members of the community by offering programs and
                 resources.
                 </p>
                 <p>
-                Our property is a sanctuary focused on rehabilitation of animals
-                and people in the community. We plan on building apartments/kennels
-                to rescue more dogs from breeders and kill shelters while taking in
-                those that need help getting back on track. Our rehabilitation
-                program pairs dogs/goats and future horses with people to give each
-                other purpose and on the right track to their forever home. Becoming
-                a non profit organization is allowing us to verify our status in
-                order to ask for grants and donations to build as needed. We&apos;ve
-                already invested 1million and realized these past three years its the
-                way to go. Also if the person doesn&apos;t want to work with animals we
-                have the farm to table program which is just farming,
-                preserving/processing and cooking.
+                Our property is a sanctuary focused on rehabilitation of animals and
+                people in the community. We plan on building apartments/kennels to
+                rescue more dogs from breeders and kill shelters while also taking
+                in those that just need a loving home to help get back on track to
+                find their fur-ever home. Our rehabilitation program pairs
+                dogs/goats(and in the future, horses) with people, to give each
+                other purpose,  and plant their feet and paws firmly on the right
+                track to find their forever home.
+                </p>
+                <p>
+                Becoming a non-profit organization is allowing us to verify our
+                status to be able to ask for grants and donations to build as
+                needed. We've already invested over $1 million of our own
+                resources, and realized these past three years that if we really
+                want to accomplish this goal we <u>NEED YOUR HELP</u>!
+                </p>
+                <p>
+                Also, if a participant would rather not work with animals, we also
+                have the farm to table program, which would involve helping with
+                the farming, preserving/processing and cooking of our crops!
                 </p>
             </div>
         </section>
