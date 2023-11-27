@@ -38,7 +38,7 @@ export default function Family () {
                         All donations go directly toward the care of our Salt of the Earth Sanctuary animals. This includes food, shelter, medical, and other animal care.
                     </p>
                     <div className="family__button">
-                        <StyledButton buttonText="Donate Here" />
+                        <StyledButton buttonText="Donate Here" buttonLink={'https://www.gofundme.com/f/36zm2vy0m0?utm_campaign=p_lico+share-sheet-first-launch&utm_medium=copy_link&utm_source=customer'} />
                     </div>
                 </div>
             </div>
