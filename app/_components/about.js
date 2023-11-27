@@ -50,7 +50,7 @@ export default function About () {
                 <p>
                 Becoming a non-profit organization is allowing us to verify our
                 status to be able to ask for grants and donations to build as
-                needed. We've already invested over $1 million of our own
+                needed. We&apos;ve already invested over $1 million of our own
                 resources, and realized these past three years that if we really
                 want to accomplish this goal we <u>NEED YOUR HELP</u>!
                 </p>
