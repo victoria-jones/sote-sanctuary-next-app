@@ -102,7 +102,7 @@ export default function Nav () {
                             <Link onClick={toggleMobileMenu}
                                 className="mobile__social-nav__link"
                                 target="blank"
-                                href="#">
+                                href="https://www.facebook.com/sotesanctuary?mibextid=LQQJ4d">
                                     <li className="mobile__social-nav__link--item">
                                         <Image
                                             className="mobile__social-nav__link--image"
@@ -117,7 +117,7 @@ export default function Nav () {
                             <Link onClick={toggleMobileMenu}
                                 className="mobile__social-nav__link"
                                 target="blank"
-                                href="#">
+                                href="https://www.tiktok.com/@sote_sanctuary?_t=8habgH7BbEk&_r=1">
                                     <li className="mobile__social-nav__link--item">
                                         <Image
                                             className="mobile__social-nav__link--image"
@@ -126,21 +126,6 @@ export default function Nav () {
                                             width={40}
                                             height={40}
                                             alt="tiktok icon"
-                                        />
-                                    </li>
-                            </Link>
-                            <Link onClick={toggleMobileMenu}
-                                className="mobile__social-nav__link"
-                                target="blank"
-                                href="#">
-                                    <li className="mobile__social-nav__link--item">
-                                        <Image
-                                            className="mobile__social-nav__link--image"
-                                            priority
-                                            src='images/icons/youtube.svg'
-                                            width={40}
-                                            height={40}
-                                            alt="youtube icon"
                                         />
                                     </li>
                             </Link>
@@ -196,7 +181,7 @@ export default function Nav () {
                                 </li>
                         </Link>
                         <Link className="social-nav__link"
-                            href="#"
+                            href="https://www.facebook.com/sotesanctuary?mibextid=LQQJ4d"
                             target="blank"
                         >
                                 <li className="social-nav__link--item">
@@ -211,7 +196,7 @@ export default function Nav () {
                                 </li>
                         </Link>
                         <Link className="social-nav__link"
-                            href="#"
+                            href="https://www.tiktok.com/@sote_sanctuary?_t=8habgH7BbEk&_r=1"
                             target="blank"
                         >
                                 <li className="social-nav__link--item">
@@ -222,22 +207,6 @@ export default function Nav () {
                                         width={25}
                                         height={25}
                                         alt="tiktok icon"
-                                    />
-                                </li>
-                        </Link>
-                        <Link className="social-nav__link"
-                            href="#"
-                            target="blank"
-
-                        >
-                                <li className="social-nav__link--item">
-                                    <Image
-                                        className="social-nav__link--item--image"
-                                        priority
-                                        src='images/icons/youtube.svg'
-                                        width={25}
-                                        height={25}
-                                        alt="youtube icon"
                                     />
                                 </li>
                         </Link>
