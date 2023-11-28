@@ -11,8 +11,11 @@ export default function About () {
                     <Logo large />
                 </div>
                 <div className="about__video">
-                    <video width="100%" height="100%" muted autoPlay loop>
+                    <video className="about__video__content"
+                        width="100%" height="100%" muted loop playsInline autoPlay>
                         <source src="videos/pig-and-pond_sote-sanctuary_video.mp4" type="video/mp4" />
+                        <source src="videos/pig-and-pond_sote-sanctuary_video_03.mp4" type="video/mp4" />
+                        video is not supported
                     </video>
                 </div>
 

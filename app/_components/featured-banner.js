@@ -18,7 +18,7 @@ export default function FeaturedBanner ({ addClass }) {
                     alt="heart icon"
                 />
 
-                <span>New <Link className='inlineLink' href="#rescue-feature-section">rescue of the month</Link> looking for a forever home!</span>
+                <span>New <Link className='inlineLink' href="#rescue-feature-section">rescue of the month</Link> <span className="featured-banner__expanded-text">looking for a forever home!</span></span>
 
                 <Image
                     className="featured-banner__heart"
