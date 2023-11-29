@@ -23,6 +23,9 @@
 ****************************/
 
 @mixin respond($breakpoint) {
+    @if $breakpoint == xs-phone {
+      @media only screen and (max-width: 22.8125em) { @content }; //365px
+    }
     @if $breakpoint == small-phone {
       @media only screen and (max-width: 31.25em) { @content }; //500px
     }

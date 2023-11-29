@@ -16,6 +16,7 @@ export default function Logo ({ toggleColor, mobile, large }) {
                 {
                     toggleColor ? (
                         <Image
+                            className="logo__image-large logo__image-large__white"
                             src="images/logo/sote-sanctuary-logo-text_white.png"
                             height={70}
                             width={236}
@@ -24,6 +25,7 @@ export default function Logo ({ toggleColor, mobile, large }) {
                     ):
                     (
                         <Image
+                        className="logo__image-large"
                             src="images/logo/sote-sanctuary-logo-text.png"
                             height={70}
                             width={236}
@@ -44,6 +46,7 @@ export default function Logo ({ toggleColor, mobile, large }) {
                     mobile ? (
                         toggleColor ? (
                             <Image
+                                className="logo__image-small logo__image-small__white"
                                 src="images/logo/sote-sanctuary-logo-abbreviation_white.png"
                                 height={30}
                                 width={109}
@@ -51,6 +54,7 @@ export default function Logo ({ toggleColor, mobile, large }) {
                             />
                         ) : (
                             <Image
+                                className="logo__image-small"
                                 src="images/logo/sote-sanctuary-logo-abbreviation.png"
                                 height={30}
                                 width={109}
@@ -61,6 +65,7 @@ export default function Logo ({ toggleColor, mobile, large }) {
                     (
                         toggleColor ? (
                             <Image
+                                className="logo__image logo__image__white"
                                 src="images/logo/sote-sanctuary-logo-text_white.png"
                                 height={70}
                                 width={236}
@@ -69,6 +74,7 @@ export default function Logo ({ toggleColor, mobile, large }) {
                         ):
                         (
                             <Image
+                            className="logo__image"
                                 src="images/logo/sote-sanctuary-logo-text.png"
                                 height={70}
                                 width={236}

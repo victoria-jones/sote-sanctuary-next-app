@@ -5,4 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &__image {
+        height: 5.25rem;
+        width: 17.7rem;
+    }
 }

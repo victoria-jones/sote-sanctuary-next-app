@@ -1,36 +1,52 @@
 @import '../main.styles.scss';
 
-.follow {
-    position: relative;
+.new-follow {
 
-    &__image {
+    &__image-holder {
         position: relative;
-        &--01,
-        &--10 {
-            aspect-ratio: 401 / 300;
-        }
-        &--02,
-        &--09 {
-            aspect-ratio: 504 / 300;
-        }
-        &--03,
-        &--04,
-        &--05,
-        &--06 {
-            aspect-ratio: 196 / 197;
-        }
-        &--07,
-        &--08 {
-            aspect-ratio: 196 / 404;
-        }
-        @include respond(xs-phone) {
-            &--03,
-            &--04,
-            &--06,
-            &--11 {
-                display: none;
+        overflow: hidden;
+
+        @include respond(large-phone) {
+            width: 0;
+            height: 0;
+
+            &:first-child,
+            &:nth-child(10) {
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 401 / 300;
             }
+            &:nth-child(2),
+            &:nth-child(9) {
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 504 / 300;
+            }
+
+            &__image {
+                &--03,
+                &--04,
+                &--05,
+                &--06,
+                &--07,
+                &--08 {
+                    display: none;
+                    width: 0;
+                    height: 0;
+                }
+            }
+
         }
+
+        &__image {
+            position: absolute;
+        }
+
+    }
+
+    &__squares-for-grid {
+        aspect-ratio: 1 / 1;
+        background-color: purple;
     }
 
     &__container {
@@ -39,10 +55,6 @@
         align-items: center;
         justify-content: center;
         aspect-ratio: 7 / 5 ;
-
-        @include respond(between-phone-tab) {
-            aspect-ratio: 11 / 9;
-        }
     }
 
     &__social-media {
@@ -103,5 +115,4 @@
     &__paragraph {
         margin-bottom: 0 !important;
     }
-
 }
