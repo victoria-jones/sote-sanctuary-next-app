@@ -33,11 +33,20 @@
         @include respond(small-phone) {
             display: none;
         }
+        @include respond(xs-phone) {
+            display: block;
+        }
     }
 
     &__image {
         position: absolute;
         z-index: -1;
         @include drop-shadow;
+    }
+
+    &__expanded-text {
+        @include respond(xs-phone) {
+            display: none;
+        }
     }
 }

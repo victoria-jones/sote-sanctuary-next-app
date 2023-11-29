@@ -288,7 +288,7 @@ header {
     grid-row: 9 / -1;
 
     @include respond(large-phone) {
-      grid-column: 1 / 4;
+      grid-column: 1 / 5;
       grid-row: 3;
     }
   }
@@ -297,7 +297,7 @@ header {
     grid-row: 9 / -1;
 
     @include respond(large-phone) {
-      grid-column: 4 / -1;
+      grid-column: 5 / -1;
       grid-row: 3;
     }
   }
