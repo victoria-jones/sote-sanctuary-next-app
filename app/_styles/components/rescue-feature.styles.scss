@@ -32,8 +32,11 @@
 
         &__leaves {
             position: absolute;
-            //bottom: 5rem;
             bottom: 20%;
+
+            @include respond(phone) {
+                width: 26rem;
+            }
         }
     }
 

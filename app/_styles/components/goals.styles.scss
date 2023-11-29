@@ -4,6 +4,10 @@
 
     &__container {
 
+        @include respond(small-phone) {
+            //padding: 0;
+        }
+
         &__bg {
             position: absolute;
             bottom: 0;
