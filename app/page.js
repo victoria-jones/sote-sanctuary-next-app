@@ -4,6 +4,7 @@ import RescueFeature from './/_components/rescue-feature';
 import Family from './/_components/family';
 import Goals from './/_components/goals';
 import Follow from './/_components/follow';
+import NewFollow from './/_components/new-follow';
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
 
       <Goals />
 
-      <Follow />
+      <NewFollow />
     </main>
   )
 }

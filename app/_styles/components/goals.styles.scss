@@ -4,8 +4,8 @@
 
     &__container {
 
-        @include respond(small-phone) {
-            //padding: 0;
+        @include respond(phone) {
+            padding: 0 2rem;
         }
 
         &__bg {
@@ -39,6 +39,7 @@
         border-image: linear-gradient(to right, transparent 10%, $color-secondary-grey 10%, $color-secondary-grey 90%, transparent 90%) 1;
 
         @include respond(phone) {
+            width: 100%;
             transform: rotate(0);
             padding-top: 2rem;
         }
@@ -62,9 +63,20 @@
 
             height: 9rem;
 
+            @include respond(phone) {
+                &:last-child {
+                    margin-bottom: 3rem;
+                }
+            }
+
             &__text {
                 width: 70%;
                 padding-top: 3rem;
+
+                @include respond(phone) {
+                    width: 100%;
+                    padding-top: 4rem;
+                }
             }
 
             &__number {
@@ -76,6 +88,11 @@
                 font-size: 13rem;
                 //opacity: .3;
                 z-index: -1;
+
+                @include respond(phone) {
+                    left: -1.5rem;
+                    font-size: 11rem;
+                }
             }
         }
     }
@@ -95,7 +112,7 @@
             z-index: 0;
 
             @include respond(phone) {
-                width: 90%;
+                width: 100%;
             }
         }
 
