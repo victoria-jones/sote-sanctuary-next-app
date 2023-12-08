@@ -1,4 +1,5 @@
 import Logo from './logo';
+import DonateMeter from './donate-meter';
 import '..//_styles/components/about.styles.scss';
 
 export default function About () {
@@ -62,6 +63,10 @@ export default function About () {
                 have the farm to table program, which would involve helping with
                 the farming, preserving/processing and cooking of our crops!
                 </p>
+            </div>
+
+            <div className="about__donate-meter">
+                <DonateMeter />
             </div>
         </section>
     );

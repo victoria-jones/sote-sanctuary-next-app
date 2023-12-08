@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from './logo';
+import DonateButton from './donate-button';
 import ViewportSize from './viewport-size';
 import '..//_styles/components/navigation.styles.scss';
 
@@ -75,11 +76,11 @@ export default function Nav () {
                                 href="#goals-section">
                                 <li className="mobile__main-nav__link--item">goals</li>
                             </Link>
-                            <Link onClick={toggleMobileMenu}
-                                className="mobile__main-nav__link"
-                                href="#family-section">
-                                <li className="mobile__main-nav__link--item">donate</li>
-                            </Link>
+
+                            <DonateButton
+                                addClass="mobile__main-nav__link"
+                                mobileMenu
+                            />
                         </ul>
                     </nav>
                     <nav className="mobile__social-nav">
@@ -151,10 +152,7 @@ export default function Nav () {
                             href="#goals-section">
                             <li className="main-nav__link--item">goals</li>
                         </Link>
-                        <Link className="main-nav__link"
-                            href="#family-section">
-                            <li className="main-nav__link--item">donate</li>
-                        </Link>
+                        <DonateButton addClass="main-nav__link" />
                     </ul>
                 </nav>
 

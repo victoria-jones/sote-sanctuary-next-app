@@ -74,6 +74,16 @@ header {
     grid-template-columns: 1fr;
     row-gap: 5rem;
   }
+
+  &__donate-meter {
+    grid-row: 3;
+    grid-column: 2 / -1;
+
+    @include respond(tab-port) {
+      grid-row: 3;
+      grid-column: 1 / -1;
+    }
+  }
 }
 
 ///////////////////

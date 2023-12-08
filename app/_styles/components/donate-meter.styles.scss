@@ -1,0 +1,12 @@
+@import '../main.styles.scss';
+
+.donate-meter {
+    //max-width: 70rem;
+
+    &__iframe{
+        max-width:332px;
+        min-width:250px;
+        min-height: 90px;
+        max-height:none!important;
+    }
+}
