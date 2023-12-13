@@ -26,7 +26,7 @@ export default function NewFollow () {
                 <Image className="new-follow__image-holder__image new-follow__image-holder__image--03"
                     src="images/jezebel.png"
                     fill
-                    alt="jezebel the dog with a cowboy hat"
+                    alt="jezebella the dog with a cowboy hat"
                 />
             </div>
 
@@ -48,9 +48,9 @@ export default function NewFollow () {
 
             <div className="new-follow__grid-item new-follow__image-holder new-follow__image-holder--square" id="new-follow__image-holder-06">
                 <Image className="new-follow__image-holder__image new-follow__image-holder__image--06"
-                    src="images/animal-portraits/goat-portrait_social-media.png"
+                    src="images/baby-goat.png"
                     fill
-                    alt="portrait of a goat"
+                    alt="salt of the earth sanctuary's first birth, a baby goat"
                 />
             </div>
 

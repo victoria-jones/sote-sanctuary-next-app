@@ -66,7 +66,7 @@ export default function Carousel () {
                     carousel__animal-container--02
                 ">
                     <div className="carousel__animal-name">
-                        Jezabelle
+                        Jezabella
                     </div>
                     <Image
                         src="images/animal-portraits/jezabelle-portrait.png"
