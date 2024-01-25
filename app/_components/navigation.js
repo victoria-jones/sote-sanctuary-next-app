@@ -141,15 +141,15 @@ export default function Nav () {
                 <nav className="main-nav">
                     <ul className="main-nav__list">
                         <Link className="main-nav__link"
-                            href="#about-section">
+                            href="/about">
                             <li className="main-nav__link--item">about</li>
                         </Link>
                         <Link className="main-nav__link"
-                            href="#family-section">
+                            href="/#family-section">
                             <li className="main-nav__link--item">family</li>
                         </Link>
                         <Link className="main-nav__link"
-                            href="#goals-section">
+                            href="/#goals-section">
                             <li className="main-nav__link--item">goals</li>
                         </Link>
                         <DonateButton addClass="main-nav__link" />
