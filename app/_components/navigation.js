@@ -63,17 +63,22 @@ export default function Nav () {
                         <ul className="mobile__main-nav__list">
                             <Link onClick={toggleMobileMenu}
                                 className="mobile__main-nav__link"
-                                href="#about-section">
+                                href="/">
+                                <li className="mobile__main-nav__link--item">home</li>
+                            </Link>
+                            <Link onClick={toggleMobileMenu}
+                                className="mobile__main-nav__link"
+                                href="/about">
                                 <li className="mobile__main-nav__link--item">about</li>
                             </Link>
                             <Link onClick={toggleMobileMenu}
                                 className="mobile__main-nav__link"
-                                href="#family-section">
+                                href="/#family-section">
                                 <li className="mobile__main-nav__link--item">family</li>
                             </Link>
                             <Link onClick={toggleMobileMenu}
                                 className="mobile__main-nav__link"
-                                href="#goals-section">
+                                href="/#goals-section">
                                 <li className="mobile__main-nav__link--item">goals</li>
                             </Link>
 
@@ -140,6 +145,10 @@ export default function Nav () {
             <header>
                 <nav className="main-nav">
                     <ul className="main-nav__list">
+                        <Link className="main-nav__link"
+                            href="/">
+                            <li className="main-nav__link--item">home</li>
+                        </Link>
                         <Link className="main-nav__link"
                             href="/about">
                             <li className="main-nav__link--item">about</li>
